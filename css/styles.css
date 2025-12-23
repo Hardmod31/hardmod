@@ -1,0 +1,758 @@
+/* styles.css */
+/* =========================
+   Fonts helpers
+========================= */
+.expletus-sans { font-family: "Expletus Sans", sans-serif; font-style: normal; }
+.inter-tight  { font-family: "Inter Tight", sans-serif; font-style: normal; }
+
+/* =========================
+   Base
+========================= */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body{
+  background:
+    radial-gradient(1100px 600px at 20% 10%, rgba(35,213,171,.18), transparent 60%),
+    radial-gradient(900px 600px at 90% 20%, rgba(70,120,255,.16), transparent 55%),
+    linear-gradient(180deg,#0b1220,#0f1a2f);
+  color: rgba(255,255,255,.92);
+  font-family: "Inter Tight", sans-serif;
+  font-size: 15px;
+}
+
+a { color: inherit; text-decoration: none; }
+.container { max-width: 1170px; margin: auto; padding: 0 15px; }
+.hidden { display: none !important; }
+
+.text-uppercase{ text-transform: uppercase; }
+.text-center { text-align:center; }
+
+ul{ padding-left:18px; margin:4px 0 6px; font-size:14px; color: rgba(255,255,255,.78); }
+li{ margin-bottom:4px; }
+
+/* =========================
+   Header
+========================= */
+#header{
+  width: 100%;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 100;
+  background: rgba(10,16,30,.55);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,.10);
+}
+
+.header-row{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap: 12px;
+  padding: 12px 0;
+}
+
+.logo{
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: rgba(255,255,255,.90);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu-toggle{
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.08);
+  color: rgba(255,255,255,.92);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-toggle:hover { background: rgba(255,255,255,.12); }
+
+/* Top nav (desktop), hidden on mobile */
+
+.top-nav{
+
+  display: none;
+
+}
+
+.top-nav__link{
+
+  border: none;
+
+  background: transparent;
+
+  color: rgba(255,255,255,.75);
+
+  font-family: "Inter Tight", sans-serif;
+
+  font-size: 14px;
+
+  padding: 6px 10px;
+
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  transition: background-color .2s ease, color .2s ease;
+
+}
+
+.top-nav__link:hover{
+
+  background: rgba(255,255,255,.10);
+
+  color: rgba(255,255,255,.92);
+
+}
+
+.top-nav__link.active{
+
+  background: rgba(35,213,171,.20);
+
+  color: rgba(255,255,255,.96);
+
+}
+
+
+/* =========================
+   Sidebar
+========================= */
+.side-menu{
+  position: fixed;
+  top: 0; left: 0;
+  width: 280px;
+  height: 100vh;
+  padding: 78px 14px 14px;
+  z-index: 120;
+  background: rgba(10,16,30,.86);
+  backdrop-filter: blur(14px);
+  border-right: 1px solid rgba(255,255,255,.10);
+  transform: translateX(-110%);
+  transition: transform .18s ease;
+}
+.side-menu.open{ transform: translateX(0); }
+
+.side-menu__nav{ display:flex; flex-direction:column; gap:10px; }
+
+.side-menu__link{
+  width:100%;
+  text-align:left;
+  padding:12px 12px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.86);
+  cursor:pointer;
+  font-family:"Inter Tight",sans-serif;
+}
+.side-menu__link:hover,
+.side-menu__link.active{
+  background: rgba(35,213,171,.14);
+  border-color: rgba(35,213,171,.35);
+}
+
+.menu-overlay{
+  position:fixed;
+  inset:0;
+  z-index:110;
+  background: rgba(0,0,0,.55);
+}
+
+/* =========================
+   Main / pages
+========================= */
+#main{ padding-top: 86px; }
+.pages{ padding-bottom: 26px; }
+
+.page{ display:none; }
+.page.active{ display:block; }
+
+/* =========================
+   Cards / typography
+========================= */
+.card{
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 18px;
+  box-shadow: 0 20px 70px rgba(0,0,0,.35);
+  backdrop-filter: blur(14px);
+  padding: 20px 18px 18px;
+  margin-bottom: 18px;
+}
+
+.section-title{
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: rgba(255,255,255,.92);
+}
+
+.section-caption{
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  color: rgba(255,255,255,.60);
+  margin-bottom:4px;
+}
+
+.section-header-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  gap:8px;
+}
+
+.main-info-text{
+  font-size:15px;
+  line-height:1.6;
+  margin-bottom:10px;
+  color: rgba(255,255,255,.78);
+}
+
+.company-line{
+  display:flex;
+  justify-content:space-between;
+  gap:8px;
+  font-size:15px;
+  color: rgba(255,255,255,.68);
+  margin-bottom:10px;
+}
+.company-line strong{ color: rgba(255,255,255,.92); }
+
+/* =========================
+   About layout
+========================= */
+.about-grid{
+  display:grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap:20px;
+  align-items:start;
+}
+@media (max-width: 880px){
+  .about-grid{ grid-template-columns:1fr; }
+}
+
+.big-photo{
+  height: 560px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.12);
+  box-shadow: 0 20px 70px rgba(0,0,0,.45);
+  background:
+    radial-gradient(900px 450px at 50% 20%, rgba(255,255,255,.16), transparent 55%),
+    linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.55));
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.big-photo::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(to top, rgba(0,0,0,.55), transparent 45%),
+    radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.35) 100%);
+  pointer-events:none;
+}
+
+.big-photo__social{
+  position:absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  display:flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* толстая ровная рамка без "пикселей" */
+.big-photo__social .social-link{
+  width: 56px;
+  height: 56px;
+  border-radius: 20px;
+  background: rgba(0,0,0,.32);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
+  backdrop-filter: blur(8px);
+  transition: transform .25s ease, background .25s ease;
+}
+.big-photo__social .social-link::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius: 20px;
+  border: 3px solid rgba(255,255,255,.48);
+  box-shadow: 0 0 0 1px rgba(0,0,0,.65) inset;
+  pointer-events:none;
+}
+.big-photo__social .social-link:hover{
+  transform: translateY(-2px);
+  background: rgba(0,0,0,.42);
+}
+.big-photo__social .social-link:hover::before{ border-color: rgba(255,255,255,.72); }
+
+.big-photo__social .social-link i{
+  font-size: 30px;
+  color: #000;
+  opacity: .92;
+  text-shadow: 0 0 2px rgba(255,255,255,.85), 0 0 10px rgba(255,255,255,.18);
+  transition: color .25s ease, opacity .25s ease, text-shadow .25s ease;
+}
+.big-photo__social .social-link.telegram:hover i{ color: #1c87df; text-shadow: none; }
+.big-photo__social .social-link.whatsapp:hover i{ color: #13c421; text-shadow: none; }
+.big-photo__social .social-link.twitter:hover i{ color: #1966d8; text-shadow: none; }
+.big-photo__social .social-link.phone:hover i{ color: rgba(35,213,171,1); text-shadow: none; }
+.big-photo__social .social-link.github:hover i{ color: #8a2eaf; text-shadow: none; }
+
+
+/* =========================
+   Badges / tabs
+========================= */
+.badge-row{ display:flex; flex-wrap:wrap; gap:6px; margin-top:6px; }
+
+.badge{
+  font-size:13px;
+  padding:5px 9px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.16);
+  background-color: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.78);
+  margin-bottom: 10px;
+}
+
+.experience-tabs .exp-tab{
+  cursor:pointer;
+  transition: background-color .25s ease, border-color .25s ease, transform .25s ease;
+}
+.experience-tabs .exp-tab:hover{
+  background: rgba(35,213,171,.14);
+  border-color: rgba(35,213,171,.35);
+  transform: translateY(-1px);
+}
+.experience-tabs .exp-tab.active{
+  background: rgba(35,213,171,.18);
+  border-color: rgba(35,213,171,.45);
+}
+
+/* =========================
+   Tabs content — FIXED page + smooth "slide down"
+   - не используем display:none/block (убивает анимацию)
+   - не используем position:absolute/inset (даёт наплывы)
+========================= */
+.experience-content{
+  position: relative;
+  transition: min-height .25s ease;
+  will-change: min-height;
+  overflow: hidden; /* чтобы панель выезжала "внутри" и не прыгал лейаут */
+}
+
+/* Состояние по умолчанию: панель свернута и невидима */
+.exp-panel{
+  max-height: 0;
+  overflow: hidden;
+
+  opacity: 0;
+  transform: translateY(-14px);
+
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    max-height .55s ease,
+    opacity .35s ease,
+    transform .45s ease,
+    visibility 0s linear .55s;
+
+  will-change: max-height, opacity, transform;
+}
+
+/* Активная панель: раскрывается + плавно "выплывает" сверху вниз */
+.exp-panel.is-active{
+  max-height: 2800px; /* запас */
+  overflow: visible;
+
+  opacity: 1;
+  transform: translateY(0);
+
+  visibility: visible;
+  pointer-events: auto;
+
+  transition:
+    max-height .65s ease,
+    opacity .40s ease,
+    transform .55s ease,
+    visibility 0s;
+}
+
+/* пока JS "замораживает" высоту, не трогаем её */
+.experience-content.is-animating{
+  transition: none;
+}
+
+
+/* =========================
+   Hobby photos (one window)
+========================= */
+.hobby-layout{
+  display:grid;
+  grid-template-columns:120px minmax(0,1fr);
+  gap:14px;
+  align-items:flex-start;
+}
+@media (max-width: 720px){
+  .hobby-layout{ grid-template-columns:1fr; }
+}
+
+body.js-ready .hobby-layout > div:first-child{
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.hobby-photo{
+  width:120px;
+  height:120px;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 8px 20px rgba(0,0,0,.35);
+  background-size:cover;
+  background-position:center;
+}
+
+body.js-ready .hobby-photo{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  transform: scale(.985);
+  transition: opacity .25s ease, transform .25s ease;
+}
+body.js-ready .hobby-photo.is-active{
+  opacity:1;
+  transform: scale(1);
+}
+
+/* =========================
+   Achievements grid
+========================= */
+.achievements-grid{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:8px;
+  margin-top:10px;
+}
+@media (max-width: 880px){
+  .achievements-grid{ grid-template-columns:repeat(4,minmax(0,1fr)); }
+}
+@media (max-width: 640px){
+  .achievements-grid{ grid-template-columns:repeat(3,minmax(0,1fr)); }
+}
+
+.achievement-card{
+  border-radius:12px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 6px 20px rgba(0,0,0,.35);
+  background-size:cover;
+  background-position:center;
+  cursor:pointer;
+  padding-top:70%;
+  position:relative;
+}
+.achievement-card::after{ content:""; position:absolute; inset:0; }
+.achievement-card img{ display:none; }
+
+/* =========================
+   Photos strip
+========================= */
+.photo-strip{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:8px;
+  margin-top:10px;
+}
+.photo-card{
+  height:250px;
+  border-radius:16px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 8px 30px rgba(0,0,0,.35);
+  background-size:cover;
+  background-position:center;
+  cursor:pointer;
+}
+
+/* =========================
+   Education page
+========================= */
+.edu-stack{ display: block; }
+
+.edu-row{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+@media (max-width: 880px){
+  .edu-row{ grid-template-columns: 1fr; }
+}
+
+.edu-item{
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.edu-logo{
+  width: 86px;
+  height: 86px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06);
+  box-shadow: 0 8px 20px rgba(0,0,0,.35);
+  background-size: cover;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex: 0 0 86px;
+}
+.edu-text{ min-width: 0; }
+
+/* =========================
+   Image modal
+========================= */
+.image-modal{
+  display:none;
+  position:fixed;
+  z-index:9999;
+  left:0; top:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,.85);
+  justify-content:center;
+  align-items:center;
+}
+.image-modal.open{ display:flex; }
+
+.image-modal-content{
+  max-width:90vw;
+  max-height:90vh;
+  border-radius:12px;
+  box-shadow:0 20px 60px rgba(0,0,0,.9);
+}
+.image-modal-content img{
+  display:block;
+  max-width:100%;
+  max-height:90vh;
+  border-radius:12px;
+}
+
+/* =========================
+   Desktop: menu always visible
+========================= */
+@media (min-width: 992px){
+
+  /* Hide burger + sidebar on desktop */
+
+  .side-menu{
+
+    display: none !important;
+
+  }
+
+  .menu-overlay{
+
+    display: none !important;
+
+  }
+
+  .menu-toggle{
+
+    display: none;
+
+  }
+
+  /* Header layout + show top nav */
+
+  #header .header-row{
+
+    justify-content: space-between;
+
+    align-items: center;
+
+  }
+
+  .top-nav{
+
+    display: flex;
+
+    gap: 8px;
+
+  }
+
+  /* Main content without left padding */
+
+  #main{
+
+    padding-left: 0;
+
+  }
+
+}
+
+/* =========================
+   Tabs content (smooth reveal, no page jerk)
+   Работает с твоим app.js: он ставит .is-active и поддерживает min-height контейнера
+========================= */
+.experience-content{
+  position: relative;
+  transition: min-height .25s ease;
+  will-change: min-height;
+  overflow: hidden;               /* чтобы при анимации не "торчало" */
+}
+
+/* Все панели остаются в потоке (display НЕ трогаем), но скрыты визуально */
+.exp-panel{
+  max-height: 0;
+  overflow: hidden;
+
+  opacity: 0;
+  transform: translateY(12px);
+
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    max-height .30s ease,
+    opacity .40s ease,
+    transform .50s ease,
+    visibility 0s linear .55s;
+
+  will-change: max-height, opacity, transform;
+}
+
+/* Активная панель — раскрывается и "выплывает" вниз */
+.exp-panel.is-active{
+  max-height: 3000px;            /* запас, чтобы влез любой текст */
+  overflow: visible;
+
+  opacity: 1;
+  transform: translateY(0);
+
+  visibility: visible;
+  pointer-events: auto;
+
+  transition:
+    max-height .35s ease,
+    opacity .45s ease,
+    transform .60s ease,
+    visibility 0s;
+}
+
+/* На мобильных можно чуть меньше движение (по желанию) */
+@media (max-width: 720px){
+  .exp-panel{ transform: translateY(-8px); }
+}
+
+/* ===== TAB ANIMATION OVERRIDE (put at the very end) ===== */
+
+/* контейнер: фиксируем визуально и не даём "вылезать" при анимации */
+.experience-content{
+  position: relative;
+  overflow: hidden;
+  transition: min-height .25s ease;
+  will-change: min-height;
+}
+
+/* панель: стартует ВЫШЕ и опускается вниз (top -> down) */
+.exp-panel{
+  max-height: 0;
+  overflow: hidden;
+
+  opacity: 0;
+  transform: translateY(-16px);           /* ключевое: минус = сверху вниз */
+
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    max-height .60s ease,
+    opacity .45s ease,
+    transform .60s ease,
+    visibility 0s linear .60s;
+
+  will-change: max-height, opacity, transform;
+}
+
+/* активная панель */
+.exp-panel.is-active{
+  max-height: 3000px;
+  overflow: visible;
+
+  opacity: 1;
+  transform: translateY(0);
+
+  visibility: visible;
+  pointer-events: auto;
+
+  transition:
+    max-height .70s ease,
+    opacity .50s ease,
+    transform .70s ease,
+    visibility 0s;
+}
+
+/* пока JS держит высоту — не анимируем min-height, чтобы не было рывков */
+.experience-content.is-animating{
+  transition: none;
+}
+
+/* мобилка: чуть меньше смещение */
+@media (max-width: 720px){
+  .exp-panel{ transform: translateY(-10px); }
+}
+
+/* ===== TAB ANIMATION OVERRIDE (put at the very end) ===== */
+
+/* Никакой анимации изменения высоты контейнера */
+.experience-content{
+  transition: none !important;
+}
+
+/* Панели: без “выплывания” (без transform/opacity transitions) */
+.exp-panel{
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: none !important;
+  visibility: hidden;
+  pointer-events: none;
+  transition: none !important;
+  will-change: auto;
+}
+
+.exp-panel.is-active{
+  max-height: 3000px;
+  overflow: visible;
+  opacity: 1;
+  transform: none !important;
+  visibility: visible;
+  pointer-events: auto;
+  transition: none !important;
+}
+
+/* Force tabs container to shrink/grow by content */
+.experience-content{
+  min-height: 0 !important; /* перебивает container.style.minHeight из app.js */
+}

@@ -1,0 +1,956 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vadim Glazko</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="styles.css?v=999">
+<script src="app.js?v=999" defer></script>
+
+</head>
+
+<body>
+  <!-- Sidebar (burger: one button) -->
+  <aside class="side-menu" id="sideMenu" aria-label="Меню">
+    <nav class="side-menu__nav">
+      <button class="side-menu__link active" data-page="about">Обо мне</button>
+      <button class="side-menu__link" data-page="exp">Профессиональный опыт</button>
+      <button class="side-menu__link" data-page="edu">Образование</button>
+    </nav>
+  </aside>
+  <div class="menu-overlay hidden" id="menuOverlay"></div>
+
+<header id="header">
+  <div class="container header-row">
+    <button id="menuToggle" class="menu-toggle" aria-label="Меню">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="logo expletus-sans">Glazko Vadim (Chief Commercial Officer)</div>
+  
+
+    <nav class="top-nav">
+      <button class="top-nav__link active" data-page="about">Обо мне</button>
+      <button class="top-nav__link" data-page="exp">Профессиональный опыт</button>
+      <button class="top-nav__link" data-page="edu">Образование</button>
+    </nav>
+
+  </div>
+</header>
+
+
+  <main id="main">
+    <div class="container pages">
+      <!-- PAGE 1: ABOUT -->
+      <section class="page active" id="page-about">
+        <div class="about-grid">
+          <!-- Big photo placeholder + social icons from your footer -->
+          <div class="big-photo" style="background-image:url('./img/big.png');" aria-label="Фото">
+            <div class="big-photo__social">
+            <a class="social-link telegram" href="https://t.me/hardmod" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            <a class="social-link whatsapp" href="https://wa.me/qr/PKXYGZOVG2PYG1" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a class="social-link github" href="https://github.com/Hardmod31" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a class="social-link twitter" href="https://x.com/Hardmod031" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+          </div>
+
+          <div class="about-right">
+            <!-- ABOUT card: RU only, text from your paste.txt -->
+            <div class="card" style="height: 560px; width: 585px;">
+              <div class="hero-block">
+                <div class="hero-left">
+                  <div>
+                    <div class="hero-name expletus-sans bold" data-lang-ru="">
+                      <span style="font-weight: 600; font-size: 20px;">Глазко Вадим Сергеевич</span>
+                    </div>
+
+                    <div class="hero-subtitle inter-tight" data-lang-ru="">
+                      31 год / Коммерческий директор (ССО)
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section-header-row">
+                <div>
+                  <div class="section-caption inter-tight" data-lang-ru=""></div>
+                  <h3 class=" expletus-sans;" style="margin: 15px 0px 0px 0px; font-weight: 600; color: hsla(181, 67%, 31%, 1);" data-lang-ru="" >
+                    Кто я?
+                  </h3>
+                </div>
+              </div>
+
+              <p class="inter-tight" data-lang-ru="">
+                Стратегический лидер с 7+ годами экспертизы в финансах, банкинге, страховании и практическим пониманием IT-интеграции в бизнес-процессы (B2B/B2C).
+              </p>
+              <p class="inter-tight" data-lang-ru="">
+                Трижды успешно стартовал коммерческие направления. Проверенный, повторяемый паттерн успеха, а не «один раз повезло».
+              </p>
+              <p style="margin: 10px 0px 0px 0px;" class="inter-tight">
+                Сочетаю коммерческую хватку с техническим мышлением. Автоматизирую процессы, внедряю AI-инструменты для анализа данных и роста эффективности, но при этом остаюсь «в поле» - руковожу командами, выстраиваю партнёрства и несу ответственность за финансовый результат.
+              </p>
+              <p style="margin: 10px 0px 0px 0px;" class="inter-tight">
+                Сталкивался со сложными ситуациями (включая смену должности после непростых кейсов), что закалило решимость и научило выходить из любых обстоятельств с новыми компетенциями. Осознанно взял паузу для глубокого погружения в IT-сферу, завершив обучение с дипломом. Этот опыт, требовавший значительных инвестиций времени и ресурсов, не только укрепил системное мышление, но и дал чёткое понимание, где лежит моя истинная страсть - в создании и развитии бизнеса на стыке финансов и технологий.
+              </p>
+
+              <p style="margin: 10px 0px 0px 0px;" class=" inter-tight">
+                <h3 style="color: hsla(181, 67%, 31%, 1); font-weight: 600;">Моя философия:</h3>
+                Ценность лидера определяется не только высотой взлётов, но и способностью подниматься после ударов, извлекать из них силу и возвращаться в строй с обновлённой стратегией. Каждый вызов - это инвестиция в устойчивость и глубину экспертизы.
+              </p>
+            </div>
+
+            <!-- CONTACTS card: RU only, text from your paste.txt -->
+            <div style="padding: 12px 20px 20px 20px; width: 585px;" class="card contacts" id="contact">
+              <div class="section-header-row">
+                <div>
+                  <div class="section-caption inter-tight" data-lang-ru=""></div>
+                  <h3 class="section-title expletus-sans" data-lang-ru="" style="margin: 0;">
+                    Контакты
+                  </h3>
+                </div>
+              </div>
+
+              <p class="inter-tight">
+                <strong>Телефон:</strong> +7 920 576‑95‑83
+              </p>
+              <p class="inter-tight">
+                <strong>Email:</strong> vadimglazko31@mail.ru
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 2: EXPERIENCE -->
+      <section class="page" id="page-exp">
+        <!-- EXPERIENCE card: RU only, your hover tabs preserved -->
+        <div class="card" id="experience">
+          <div class="section-header-row">
+            <div>
+              <h3 class="section-title expletus-sans" data-lang-ru="">
+                Профессиональный опыт
+              </h3>
+            </div>
+          </div>
+
+          <div class="badge-row inter-tight experience-tabs">
+            <button class="badge exp-tab active" data-exp="network" data-lang-ru="">
+              Network Sample
+            </button>
+
+            <button class="badge exp-tab" data-exp="otkritie" data-lang-ru="">
+              Банк «Открытие»
+            </button>
+
+            <button class="badge exp-tab" data-exp="expobank" data-lang-ru="">
+              Экспобанк
+            </button>
+
+            <button class="badge exp-tab" data-exp="rgs" data-lang-ru="">
+              «Росгосстрах» Банк
+            </button>
+
+            <button class="badge exp-tab" data-exp="vtb" data-lang-ru="">
+              ВТБ
+            </button>
+          </div>
+
+          <div class="experience-content">
+            <div class="experience-item inter-tight exp-panel" data-exp-panel="network">
+              <div class="company-line" data-lang-ru="">
+                <strong style="font-size: medium; font-weight: 600; color: hsla(181, 67%, 31%, 1);">Коммерческий
+                  директор (ССО), Network Sample</strong>
+                <span>Удаленная работа • Январь 2025 - н.в.</span>
+              </div>
+
+              <ul data-lang-ru="">
+                <p style="font-weight: 600; margin: 5px 0px 5px 10px;">
+                  1. Организация и запуск коммерческого отдела.
+                </p>
+                <li>
+                  Полный цикл создания отдела продаж «с нуля».
+                </li>
+                <li>
+                  Ответственность за IT и AI (подключение AI к Google Drive, обучение нейронки, внедрение в АМОcrm
+                  AI-отдел контроля качества, разработка TG-бота на JS, написание кода для размещения на сайтах
+                  партнёров).
+                </li>
+                <li>
+                  Реструктуризация процессов существующего отдела котировок (KPI на B2C продажи, совмещение обязанностей
+                  отдела урегулирования убытков).
+                </li>
+                <li>
+                  Изменение стратегии компании (смещение вектора с общих продаж на В2B-целевой сегмент).
+                </li>
+
+                <p style="font-weight: 600; margin: 5px 0px 5px 10px;">
+                  2. Формирование организационно-распорядительной документации.
+                </p>
+                <li>
+                  Должностные инструкции, регламенты, скрипты, программы адаптации для новых сотрудников.
+                </li>
+                <li>
+                  Ритуалы управления (ежедневные планёрки, отчёты, система мотивации).
+                </li>
+                <li>
+                  Формирование коммерческих предложений, презентаций, маркетинговых материалов (листовки, инфографики,
+                  прайс-листы).
+                </li>
+                <li>
+                  Формирование договоров ГПХ, трудовых договоров, договоров оказания услуг и т.д.
+                </li>
+
+                <p style="font-weight: 600; margin: 5px 0px 5px 10px;">
+                  3. Построение бизнес-модели.
+                </p>
+                <li>
+                  Разработка стратегии продаж и маркетинга.
+                </li>
+                <li>
+                  Формирование БДР, расчёт ФОТ, контроль рентабельности.
+                </li>
+                <li>
+                  Планирование продаж.
+                </li>
+                <li>
+                  Внедрение системы грейдов и KPI.
+                </li>
+                <li>
+                  Расширение агентских схем.
+                </li>
+
+                <p style="font-weight: 600; margin: 5px 0px 5px 10px;">
+                  4. Подбор, обучение и контроль персонала.
+                </p>
+                <li>
+                  Укомплектование отдела продаж и отдела котировок.
+                </li>
+                <li>
+                  Обучение продуктовой линейке, техникам продаж, работе с возражениями, CRM.
+                </li>
+                <li>
+                  Внедрение наставничества и парных каллибровок.
+                </li>
+                <li>
+                  Контроль эффективности за счёт тестирования в iSpring.
+                </li>
+                <li>
+                  Первичная запись разговорного обучения, транскрибация и адаптация через ИИ в готовый материал для
+                  Notion и Yonote.
+                </li>
+
+                <p style="font-weight: 600; margin: 5px 0px 5px 10px;">
+                  5. Экспертиза в страховании (B2B и B2C).
+                </p>
+                <li>
+                  Работа более, чем с 25 страховыми компаниями.
+                </li>
+                <li>
+                  Сопровождение клиента от расчёта полиса, до урегулирования убытков.
+                </li>
+                <li>
+                  Для юридических лиц (ГО, грузы (разовые, ген. договор), ИЮЛ, СМР, СРО, производства, СХ, ДМС, НС,
+                  ОСГОП, КАСКО, ОСАГО, парковые тарифы).
+                </li>
+                <li>
+                  Для физических лиц (ОСАГО, КАСКО, ипотека, ВЗР, ИФЛ, ДМС (+мигрант), АнтиКлещ).
+                </li>
+                <li>
+                  Пересмотрение партнерских отношений со страховыми компаниями. Расширение перечня СК, смена
+                  неэффективных кураторов, договоренности на ретро-бонусы.
+                </li>
+
+                <p style="font-weight: 600; margin: 5px 0px 5px 10px;">
+                  6. Работа с клиентской базой в amoCRM.
+                </p>
+                <li>
+                  Реанимация собственных клиентов, пролонгация, работа с приобретенными холодными базами.
+                </li>
+                <li>
+                  Привлечение тёплых лидов через прозвоны подрядчиков, расширение сети субагентов.
+                </li>
+                <li>
+                  Работа с платформами цифрового присутствия: Яндекс.Бизнес, 2gis, Zoon, Flamp, продвижение собственного
+                  сайта.
+                </li>
+
+                <p style="font-weight: 600; margin: 5px 0px 5px 10px;">
+                  7. Погружение в бизнес-процессы клиентов.
+                </p>
+                <li>
+                  Анализ операционных цепочек производственных компаний, логистических операторов, грузоперевозчиков и экспедиторов.
+                </li>
+                <li>
+                  Совместная работа с генеральными директорами, коммерческими, производственными и логистическими отделами, бухгалтерией.
+                </li>
+
+                <p style="font-size: medium; font-weight: 600; color: hsla(181, 67%, 31%, 1);; margin: 5px 0px 5px 0px;">
+                  Внедрения и результат:
+                </p>
+                <li>
+                  Стратегия бизнеса, AI-контроль качества, AI-google drive support, Yonote, TG-бот, Asana, настройка
+                  AMOcrm, документация, отчетность, аналитика, KPI, ip-телефония, подрядчики и реклама.
+                </li>
+                <li>
+                  От разработки концепции до вывода на плановые показатели (эталон: 500 000 руб. КВ на одного сотрудника
+                  c тайм лагом 6 месяцев), выручка компании на момент моего прихода от 300 000 до 500 000 руб., выручка
+                  на данный момент 1 700 000 руб.
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-item inter-tight exp-panel hidden" data-exp-panel="otkritie">
+              <div class="company-line" data-lang-ru="">
+                <strong style="font-size: medium; font-weight: 600; color: hsla(181, 67%, 31%, 1);">Руководитель центра
+                  автобизнеса, Банк «Открытие»</strong>
+                <span>Белгород • Апрель 2023 - Февраль 2024</span>
+              </div>
+
+              <ul data-lang-ru="">
+                <p style="font-weight: 600; margin: 5px 0px 5px 10px;">
+                  1. Управление эффективностью и развитие бизнеса.
+                </p>
+                <li>
+                  KPI работы департамента: регулярный анализ показателей.
+                </li>
+                <li>
+                  Антикризисное управление: оптимизация расходов, стимулирование спроса, повышение конверсии,
+                  диверсификация продуктовой линейки и партнёрской сети, в т. ч. налаживание кооперации с прямыми
+                  конкурентами.
+                </li>
+                <li>
+                  Реализация проекта слияния бизнеса с ВТБ Банком (интеграция процессов, передача наработок, обеспечение
+                  бесперебойной работы после сделки).
+                </li>
+                <li>
+                  Масштабирование бизнеса: открытие и запуск точек продаж на площадках автодилеров, обеспечение их
+                  рентабельности и высокой продуктивности.
+                </li>
+                <li>
+                  Рост доли рынка: продвижение услуг автокредитования, увеличение объема продаж и захват новых
+                  сегментов.
+                </li>
+
+                <p style="font-weight: 600; margin: 5px 0px 5px 10px;">
+                  2. Операционное управление и автоматизация.
+                </p>
+                <li>
+                  Внедрение цифровых инструментов для автоматизации отчётности и анализа данных.
+                </li>
+                <li>
+                  Разработка и внедрение матрицы продаж (упрощение работы менеджеров, повышение точности
+                  прогнозирования).
+                </li>
+
+                <p style="font-weight: 600; margin: 5px 0px 5px 10px;">
+                  3. Команда и партнёрства.
+                </p>
+                <li>
+                  Подбор, обучение и мотивация команды отдела автокредитования.
+                </li>
+                <li>
+                  Проведение квартальных performance-сессий с анализом зон роста и реализацией корректирующих мер.
+                </li>
+                <li>
+                  Развитие партнёрской сети: взаимодействие с автодилерами, страховыми компаниями и другими сервисами.
+                </li>
+
+                <p style="font-size: medium; font-weight: 600; color: hsla(181, 67%, 31%, 1); margin: 5px 0px 5px 0px;">
+                  Внедрения и результат:
+                </p>
+                <li>
+                  Матрица продаж, оптимизация отдела с 13 человек до 7, успешная интеграция всех процессов в Банк ВТБ.
+                </li>
+                <li>
+                  Увеличил продажи с 9 млн/мес (апрель 23г.) до 32 млн/мес (декабрь 24г.).
+                </li>
+
+                <p style="font-weight: 550">
+                  Причина ухода: поглощение бизнеса Банком ВТБ, планировал сменить сферу деятельности на IT.
+                </p>
+              </ul>
+            </div>
+
+            <div class="experience-item inter-tight exp-panel hidden" data-exp-panel="expobank">
+              <div class="company-line" data-lang-ru="">
+                <strong style="font-size: medium; font-weight: 600; color: hsla(181, 67%, 31%, 1);">Региональный
+                  директор, Экспобанк</strong>
+                <span>Удаленная работа • Сентябрь 2021 - Апрель 2023</span>
+              </div>
+
+              <ul data-lang-ru="">
+                <p style="font-weight: 600; margin: 5px 0px 5px 10px;">
+                  1. Стратегическое развитие и управление бизнесом.
+                </p>
+                <li>
+                  Полноценный запуск и масштабирование направления автобизнеса в трех новых регионах: от формирования
+                  партнерской сети до вывода точек продаж на плановые показатели.
+                </li>
+                <li>
+                  Проведение комплексного SWOT- и конкурентного анализа (по брендам, типам автосалонов, регионам,
+                  банкам) с последующей разработкой стратегии взаимодействия с ключевыми игроками рынка.
+                </li>
+                <li>
+                  Регулярная отчетность перед топ-менеджментом: подготовка еженедельных аналитических отчетов с
+                  ключевыми метриками и трендами для первых лиц Банка.
+                </li>
+
+                <p style="font-weight: 600; margin: 5px 0px 5px 10px;">
+                  2. Финансовый контроль и управление рисками.
+                </p>
+                <li>
+                  Обеспечение полного соответствия банковскому комплаенсу, фрод-контроль, предотвращения мошеннических
+                  схем.
+                </li>
+                <li>
+                  Взаимодействие с отделом андерайтинга: оптимизация входящей воронки продаж, повышение качества
+                  одобрений.
+                </li>
+                <li>
+                  Контроль и улучшение ключевых показателей: AR (Approval Rate), CR (Conversion Rate), TR (Take Rate).
+                </li>
+                <li>
+                  Управление доходностью кредитного портфеля: удержание конкурентной, но ликвидной ставки, контроль ROE
+                  Банка.
+                </li>
+
+                <p style="font-weight: 600; margin: 5px 0px 5px 10px;">
+                  3. Операционное управление и автоматизация.
+                </p>
+                <li>
+                  Координация работы с IT-департаментом: внедрение цифровых решений для автоматизации процессов,
+                  разработка CRM-инструментов.
+                </li>
+                <li>
+                  Взаимодействие с продуктовой и маркетинговой командами: запуск новых кредитных программ, участие в
+                  разработке рекламных кампаний.
+                </li>
+                <li>
+                  Организация и проведение ATL- и BTL-мероприятий для повышения узнаваемости и привлечения клиентов.
+                </li>
+
+                <p style="font-weight: 600; margin: 5px 0px 5px 10px;">
+                  4. HR и развитие команды.
+                </p>
+                <li>
+                  Рекрутинг и onboarding сотрудников: от собеседований до адаптации новых специалистов.
+                </li>
+                <li>
+                  Формирование системы KPI и мотивации (включая бонусные схемы и нематериальные поощрения).
+                </li>
+                <li>
+                  Регулярные тренинги и performance-ревью, работа над повышением квалификации команды.
+                </li>
+                <li>
+                  Развитие корпоративной культуры и клиентоориентированности.
+                </li>
+
+                <p style="font-weight: 600; margin: 5px 0px 5px 10px;">
+                  5. Инновации и новые направления.
+                </p>
+                <li>
+                  Пилотирование запуска и развития онлайн-продаж автокредитов (интеграция с digital-платформами).
+                </li>
+                <li>
+                  Пилотирование новых моделей бизнеса, включая авто по подписке.
+                </li>
+                <li>
+                  Исследование и тестирование дополнительных финансовых продуктов (страхование, доп. услуги).
+                </li>
+
+                <p style="font-size: medium; font-weight: 600; color: hsla(181, 67%, 31%, 1); margin: 5px 0px 5px 0px;">
+                  Внедрения и результат:
+                </p>
+                <li>
+                  Отчётность отделов, разработка и пилот нового невозвратного продукта (автоюрист), пилотирование онлайн
+                  подписания кредитной сделки, проработка нового формата LTV с целью роста среднего чека, открытие новых
+                  филиалов в г. Клинцы и г. Старый Оскол.
+                </li>
+                <li>
+                  Увеличил продажи автокредитов с 0 до 30 млн/мес (Белгородская область), с 0 до 14 млн/мес (Брянская
+                  область), с 0 до 9 млн/мес (Смоленская область), увеличил общее ROE портфеля по доверенной сети с
+                  10.8% до 13.7%.
+                </li>
+
+                <p style="font-weight: 550">
+                  Причина ухода: решение совета Банка упразднить кредитное направление бизнеса в приграничных регионах.
+                </p>
+              </ul>
+            </div>
+
+            <div class="experience-item inter-tight exp-panel hidden" data-exp-panel="rgs">
+              <div class="company-line" data-lang-ru="">
+                <strong style="font-size: medium; font-weight: 600; color: hsla(181, 67%, 31%, 1);">Главный менеджер по
+                  развитию бизнеса, «Росгосстрах»
+                  Банк</strong>
+                <span>Белгород • Июль 2019 - Сентябрь 2021</span>
+              </div>
+
+              <ul data-lang-ru="">
+                <li>
+                  Запуск направления автобизнеса в регионе.
+                </li>
+                <li>
+                  Открытие точек продаж на территории автодилеров и обеспечение их продуктивности.
+                </li>
+                <li>
+                  Наращивание присутствия на рынке автокредитования с постоянным увеличением общей доли продаж.
+                </li>
+                <li>
+                  Обеспечение и контроль доходности Банка и партнёра.
+                </li>
+                <li>
+                  Организация встреч с ЛПР и продвижение продуктов Банка.
+                </li>
+                <li>
+                  Формирование всей документационной и аналитической базы.
+                </li>
+                <li>
+                  Собеседование, набор и обучение специалистов отдела автокредитования, проведение квартальных собраний
+                  с выявлением зон роста и работа над ними.
+                </li>
+
+                <p style="font-size: medium; font-weight: 600; color: hsla(181, 67%, 31%, 1); margin: 5px 0px 5px 0px;">
+                  Внедрения и результат:
+                </p>
+                <li>
+                  Выстроил модель взаимодействия и контроль доходности банка и партнёров, в дальнейшем это было
+                  распространено на остальные банки, задав новый стандарт прозрачности бизнеса, сформирована модель
+                  противостояния отказам клиентов от страхования, внедрение системы поощрения и наказания.
+                </li>
+                <li>
+                  Увеличил продажи с 0 до 92 млн/мес, доля рынка с 0% до 16.8% (топ-3 в регионе), открытие 7 точек
+                  продаж на территории автосалонов, сформировал устойчивую сеть партнерских контактов среди дилеров и
+                  завоевал репутацию надежного партнера.
+                </li>
+
+                <p style="font-weight: 550">
+                  Причина ухода: предложение возглавить расширенное направление в Экспобанке.
+                </p>
+              </ul>
+            </div>
+
+            <div class="experience-item inter-tight exp-panel hidden" data-exp-panel="vtb">
+              <div class="company-line" data-lang-ru="">
+                <strong style="font-size: medium; font-weight: 600; color: hsla(181, 67%, 31%, 1);">Ведущий менеджер
+                  группы сопровождения и обработки автокредитов, ВТБ</strong>
+                <span>Белгород • Октябрь 2017 - Июль 2019</span>
+              </div>
+
+              <ul data-lang-ru="">
+                <li>
+                  Построение отношений с КСО холдинга/дилера и совместная разработка эффективной модели продаж для
+                  увеличения наполнения кредита и КВ дилера.
+                </li>
+                <li>
+                  Анализ предложений конкурентов и создание методов противоборства, на основе их недостатков.
+                </li>
+                <li>
+                  Взаимодействие с КСО и обеспечение превалирующей доли продаж, по сравнению с конкурентами.
+                </li>
+                <li>
+                  Выполнение общих трудовых функций отдела автокредитования в рамках работы структурного подразделения.
+                </li>
+                <li>
+                  Продажа СУ и кросс-продажи коробочных продуктов.
+                </li>
+                <li>
+                  Курирование работы новых сотрудников и обеспечение повышения уровня профессиональных знаний и навыков
+                  работников подразделения.
+                </li>
+                <li>
+                  Подготовка и предложение по оптимизации и автоматизации процессов в зоне ответственности.
+                </li>
+
+                <p style="font-size: medium; font-weight: 600; color: hsla(181, 67%, 31%, 1); margin: 5px 0px 5px 0px;">
+                  Внедрения и результат:
+                </p>
+                <li>
+                  Придумал калькулятор для расчета премии сотрудников в отделе, нашел новый способ взаимодствия с ИБС
+                  «Бисквит», который дал возможность редактировать ошибки кредитного договора без повторного вызова
+                  клиента.
+                </li>
+                <li>
+                  Высшие показатели по выполнению плана и проникновению страховок.
+                </li>
+
+                <p style="font-weight: 550">
+                  Причина ухода: приглашение начальника отдела в РГС Банк для запуска нового направления и наделение
+                  меня большими полномочиями.
+                </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- SKILLS card: RU only, hover tabs preserved -->
+        <div class="card">
+          <div class="section-header-row">
+            <div>
+              <h3 class="section-title expletus-sans" data-lang-ru="">
+                Ключевые компетенции
+              </h3>
+            </div>
+          </div>
+
+          <div class="badge-row inter-tight experience-tabs" id="skills-tabs">
+            <button class="badge exp-tab active" data-lang-ru="" data-skill="launch">
+              Запуски и рост
+            </button>
+            <button class="badge exp-tab" data-lang-ru="" data-skill="finance">
+              Финансы и экономика
+            </button>
+            <button class="badge exp-tab" data-lang-ru="" data-skill="team">
+              Команда и партнёры
+            </button>
+            <button class="badge exp-tab" data-lang-ru="" data-skill="tech">
+              IT и автоматизация
+            </button>
+            <button class="badge exp-tab" data-lang-ru="" data-skill="mindset">
+              Подход к работе
+            </button>
+          </div>
+
+          <div class="experience-content">
+            <div class="experience-item inter-tight exp-panel" data-skill-panel="launch">
+              <p class="main-info-text" data-lang-ru="" style="color: hsla(181, 67%, 31%, 1); font-weight: 600; font-size: 15px;">
+                Серийный «строитель с нуля»: выстраиваю стратегию, процессы и
+                команду до выхода на плановые показатели.
+              </p>
+              <ul data-lang-ru="">
+                <li>
+                  Участие в пилоте автокредитования (РГС Банк). 0 → 92 млн ₽/мес и 16,8% доли рынка в регионе (top-3).
+                </li>
+                <li>
+                  Запуск автобизнеса в 3 регионах с нуля (Экспобанк). 0 → 53 млн ₽/мес.
+                </li>
+                <li>
+                  Запуск коммерческого отдела (Network Sample). 500 тыс ₽/мес выручки → 1.7 млн ₽/мес выручки.
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-item inter-tight exp-panel hidden" data-skill-panel="finance">
+              <p class="main-info-text" data-lang-ru="" style="color: hsla(181, 67%, 31%, 1); font-weight: 600; font-size: 15px;">
+                Отвечаю за экономику направлений: P&L, воронку, маржу, ROE, рентабельность, каналы привлечения клиентов, за работу с партнерами. Смотрю не только на объём сделок, но и на прибыльность.
+              </p>
+              <ul data-lang-ru="">
+                <li>
+                  Курирую коммерческое и финансовое направление в
+                  страховом брокере.
+                </li>
+                <li>
+                  Управлял конверсией и ROE в банке, обеспечивал
+                  конкурентную, но ликвидную ставку.
+                </li>
+                <li>
+                  Знание основ ГК РФ, АПК РФ, НК РФ и практическая работа
+                  с отчётностью.
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-item inter-tight exp-panel hidden" data-skill-panel="team">
+              <p class="main-info-text" data-lang-ru="" style="color: hsla(181, 67%, 31%, 1); font-weight: 600; font-size: 15px;">
+                Управляю командами до 30+ человек и сетью партнёров:
+                автодилеры, страховые компании, банки. Важно сохранить
+                результаты и доверие людей.
+              </p>
+              <ul data-lang-ru="">
+                <li>
+                  Курировал работу 5 банковских офисов в 3 регионах,
+                  руководил направлением автокредитования.
+                </li>
+                 <li>
+                  За год сформировал и вырастил команду из 8 специалистов в страховом брокере (2 отдела, новое направление для меня).
+                </li>
+                <li>
+                  Партнёры «идут за мной» между компаниями: считаю их
+                  P&L, держу слово и помогаю зарабатывать.
+                </li>
+                <li>
+                  Наставничество, адаптация, performance‑ревью и работа с
+                  вовлечённостью команды.
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-item inter-tight exp-panel hidden" data-skill-panel="tech">
+              <p class="main-info-text" data-lang-ru="" style="color: hsla(181, 67%, 31%, 1); font-weight: 600; font-size: 15px;">
+                IT-экспертиза усиливает коммерческую роль: могу не только
+                поставить задачу IT, но и спроектировать, проверить и
+                донастроить решение под бизнес‑метрики компании.
+              </p>
+              <ul data-lang-ru="">
+                <li>
+                  Fullstack-разработчик (JavaScript), выпускник Elbrus
+                  Bootcamp (React, Redux, TypeScript, Node.js, Express,
+                  PostgreSQL, API, WebSocket, Docker, Canva).
+                </li>
+                <li>
+                  Работал в CRM (Битрикс24, amoCRM, ТESSA), ЭДО (Диадок, СБИС), внутренних банковских приложениях (Баланс Платформа, КУБ, БИСквит), обучающие платформы (iSpring, Notion, Asana, Yonote), продвинутый уровень Google Workspace и MS Office. Быстро осваиваю новые приложения.
+                </li>
+                <li>
+                  Инструменты: VSCode, WebStorm, Git, интеграции с CRM,
+                  активное использование нейросетей.
+                </li>
+                <li>
+                  Работа с AI: OpenAI, Gemini, Qwen, DeepSeek,
+                  Grok, Theb.ai, OnlinePBX, eto.ai, SAS AI Risk
+                  Management, Palantir Foundry.
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-item inter-tight exp-panel hidden" data-skill-panel="mindset">
+              <p class="main-info-text" data-lang-ru="" style="color: hsla(181, 67%, 31%, 1); font-weight: 600; font-size: 15px;">
+                В основе работы - проактивность, самоорганизация и
+                способность держать удар в кризисе. Привык отвечать за
+                результат и искать варианты в рамках своего круга
+                влияния.
+              </p>
+              <ul data-lang-ru="">
+                <li>
+                  Антикризисное управление: слияния, закрытия направлений,
+                  падение рынка - сохраняю операции, ключевых людей и
+                  продажи.
+                </li>
+                <li>
+                  Умею ставить цели, формулировать и распределять задачи и
+                  нести ответственность за итог.
+                </li>
+                <li>
+                  Стремлюсь к проактивности и решениям, а не к поиску
+                  оправданий.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 3: EDUCATION + HOBBIES + ACHIEVEMENTS + PHOTOS -->
+      <section class="page" id="page-edu">
+  <div class="edu-stack">
+
+    <!-- Образование: 2 карточки (БелГУ + Elbrus) -->
+    <div class="edu-row">
+      <div class="card edu-card">
+        <div class="edu-item">
+          <div class="edu-logo" style="background-image:url('./img/BelSU.gif');" aria-label="БелГУ"></div>
+          <div class="edu-text">
+            <div class="section-header-row">
+              <div>
+                <h3 class="section-title expletus-sans" style="margin:0;">
+                  НИУ «БелГУ»
+                </h3>
+              </div>
+            </div>
+            <p class="inter-tight" data-lang-ru="">
+               2012 - 2016
+               <p>Экономический факультет </p> 
+              <p>Финансы, кредит и налогообложение</p>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card edu-card">
+        <div class="edu-item">
+          <div class="edu-logo" style="background-image:url('./img/Elbrus.png');" aria-label="Elbrus"></div>
+          <div class="edu-text">
+            <div class="section-header-row">
+              <div>
+                <h3 class="section-title expletus-sans" style="margin:0;">
+                  Elbrus Bootcamp
+                </h3>
+              </div>
+            </div>
+            <p class="inter-tight" data-lang-ru="">
+              2024
+              <p>JavaScript Developer</p> 
+              <p>Fullstack (Frontend / Backend)</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Дальше всё как было, просто одной колонкой вниз -->
+    <!-- courses-card -->
+    <div class="card" id="courses-card">
+      <div class="section-header-row">
+        <div>
+          <h3 class="section-title expletus-sans">Курсы и повышения квалификации</h3>
+        </div>
+      </div>
+
+      <p class="inter-tight" data-lang-ru="" style="font-weight: 500; margin: 0px 0px 0px 0px;">
+      </p>
+      <p>2020 - <span style="color: hsla(181, 67%, 31%, 1); font-weight: 600;">«SellWell» Переговоры,</span> Профессиональная риторика за столом.</p>
+      <p>2021 - <span style="color: hsla(181, 67%, 31%, 1); font-weight: 600;">Каспаров Вадим Гарриевич,</span> Современный подход к диетологии.</p>
+      <p>2022 - <span style="color: hsla(181, 67%, 31%, 1); font-weight: 600;">«Litvinoff»,</span> Криптотрейдер (инвестирование, среднесрочная торговля).</p>
+      <p>2023 - <span style="color: hsla(181, 67%, 31%, 1); font-weight: 600;">«Polunin Trade»,</span> Алготрейдинг (алготрейдинг, свинг-трейдинг).</p>
+      <p>2025 - <span style="color: hsla(181, 67%, 31%, 1); font-weight: 600;">«Моё дело»,</span> Выявление и формирование потребностей; Работа с конкурентами; Технологии продаж (B2B, B2C).</p>
+    </div>
+
+
+            <!-- Hobby card: RU only, hover tabs preserved -->
+            <div class="card">
+              <div class="section-header-row">
+                <div>
+                  <div class="section-caption inter-tight" data-lang-ru=""></div>
+                  <h3 class="section-title expletus-sans" data-lang-ru="">
+                    Хобби и интересы
+                  </h3>
+                </div>
+              </div>
+
+              <div class="hobby-layout">
+                <div>
+                  <div class="hobby-photo" data-full="./img/trade3.png" data-hobby-photo="trading"
+                    style="background-image:url('./img/trade2.png');"></div>
+                  <div class="hobby-photo" data-full="./img/pwl3.jpeg" data-hobby-photo="powerlifting"
+                    style="background-image:url('./img/pwl3.jpeg');"></div>
+                  <div class="hobby-photo" data-full="./img/hobby.jpg" data-hobby-photo="hunting"
+                    style="background-image:url('./img/hobby.jpg');"></div>
+                  <div class="hobby-photo" data-full="./img/hobby-it.jpg" data-hobby-photo="it"
+                    style="background-image:url('./img/JS.png');"></div>
+                </div>
+
+                <div>
+                  <div class="badge-row inter-tight experience-tabs" id="hobby-tabs">
+                    <button class="badge exp-tab" data-hobby="it" data-lang-ru="">
+                      IT & Tech skills
+                    </button>
+
+                    <button class="badge exp-tab active" data-hobby="trading" data-lang-ru="">
+                      Трейдинг и инвестиции
+                    </button>
+
+                    <button class="badge exp-tab" data-hobby="powerlifting" data-lang-ru="">
+                      Спортивные достижения
+                    </button>
+
+                    <button class="badge exp-tab" data-hobby="hunting" data-lang-ru="">
+                      Личные увлечения
+                    </button>
+                  </div>
+
+                  <div class="experience-content">
+                    <div class="experience-item inter-tight exp-panel" data-hobby-panel="trading">
+                      <p class="main-info-text" data-lang-ru="" style="color: hsla(181, 67%, 31%, 1); font-weight: 600; font-size: 15px;">
+                        Трейдинг и инвестиции - отдельное направление жизни:
+                        системный подход, риск‑менеджмент и работа с
+                        неопределённостью.
+                      </p>
+                      <ul data-lang-ru="">
+                        <li>Кратко- и среднесрочная торговля, позиционный трейдинг, алгоритмическая торговля, staking, lending, farming, airdrops, инвестиционные портфейли.
+                        </li>
+                         <li>Проходил обучение у Litvinoff и Polunin Trade. Изучал подход Антона Клевцова, Ридвана Genesis, Мустафы Сейтуева, Market Vision, Дмитрия Енина, IKIGAI, Cryptus, Coin Metrika, Александра Кубышкина.
+                        </li>
+                          <li> Инструменты: TradingView, Capico, Coinglass, CMC, DropsTabs, Arkham, Messari, BCC, DefiLlama, Coingecko, Dexscreener. </li>
+                        <li>Применение фундаментального и технического анализа на РФ-рынке и рынке криптовалют, анализ актива и графика, поведения рынка.
+                        </li>
+                          <li>Диверсификация портфеля, хеджирование рисков, мартингейл, автоматизация стратегий, мультиактивный портфель.
+                          </li>
+                      </ul>
+                    </div>
+
+                    <div class="experience-item inter-tight exp-panel hidden" data-hobby-panel="powerlifting">
+                      <p class="main-info-text" data-lang-ru="" style="color: hsla(181, 67%, 31%, 1); font-weight: 600; font-size: 15px;">
+                        Спорт - про дисциплину, регулярность и работу на результат. Этот подход формирует характер и переносится во все сферы жизни.
+                      </p>
+                      <ul data-lang-ru="">
+                        <li>Характер спортсмена: стремление к прогрессу и победам, важный азарт в достижение поставленных целей.</li>
+                        <li>Мастер спорта по пауэрлифтингу и отдельным движениям (жим лёжа), в федерациях НАП и WRPF.</li>
+                        <li>Регулярно бегаю в любительском формате.</li>
+                        <li>Всегда охотно участвую в спортивных мероприятиях и корпоративных активностях.</li>
+                      </ul>
+                    </div>
+
+                    <div class="experience-item inter-tight exp-panel hidden" data-hobby-panel="hunting">
+                      <p class="main-info-text" data-lang-ru="" style="color: hsla(181, 67%, 31%, 1); font-weight: 600; font-size: 15px;">
+                        Стараюсь проводить свободное время с пользой, изучая что‑то новое.
+                      </p>
+                      <ul data-lang-ru="">
+                        <li>
+                          Автомобили. Опыт работы в автобизнесе оставил свой отпечаток: по возможности стараюсь сам разбираться с техническими проблемами. Из самых масштабных эпопей - полностью делал комплексную шумоизоляцию своего автомобиля.
+                        </li>
+                        <li>
+                          Биохакинг, эндокринология, нутрициология. Считаю это важной и неотъемлемой частью не только спорта, но и комфортной повседневной жизни.
+                        </li>
+                        <li>
+                          Охота. Для меня это способ восстановления и перезагрузки от городской среды, возможность побыть наедине с природой.
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="experience-item inter-tight exp-panel hidden" data-hobby-panel="it">
+                      <p class="main-info-text" data-lang-ru="" style="color: hsla(181, 67%, 31%, 1); font-weight: 600; font-size: 15px;">
+                        2024 год - посвящен изучению JavaScript. Обучение проходило в формате буткемп (крайне высокая интенсивность).
+                      </p>
+                      <ul data-lang-ru="">
+                        <li>
+                          Fullstack‑разработка (JavaScript): Frontend / Backend-developer.
+                        </li>
+                        <li>
+                          Основной стэк технологий: React, Redax Toolkit, TypeScript. Дополнительно изучал и применял: Git, CSS, HTML, Node.js, PostgreSQL, Next.js, Ajax, REST API, Base-64 decode, WebSockets, Multer, BCrypt HASH, JWT decoder, Eslint, Stylelint, Prettier, Husky, работа со сторонними API.
+                        </li>
+                      
+                        <li>
+                          Активное использование AI‑инструментов для оптимизации личных и рабочих задач.
+                        </li>
+                        <li>
+                          Интерес к архитектуре систем, аналитике данных и продуктовой логике.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Achievements: 5 photos -->
+            <div class="card">
+              <div class="section-header-row">
+                <div>
+                  <h3 class="section-title expletus-sans" data-lang-ru="" style="margin: 0;">
+                    Достижения
+                  </h3>
+                </div>
+              </div>
+
+              <div class="achievements-grid">
+                <div class="achievement-card zoomable" data-full="./img/ach1.png" style="background-image:url('./img/ach1.png');" title="Нажми, чтобы увеличить"></div>
+                <div class="achievement-card zoomable" data-full="./img/ach2.png" style="background-image:url('./img/ach2.png');" title="Нажми, чтобы увеличить"></div>
+                <div class="achievement-card zoomable" data-full="./img/ach3.png" style="background-image:url('./img/ach3.png');" title="Нажми, чтобы увеличить"></div>
+                <div class="achievement-card zoomable" data-full="./img/ach4.png" style="background-image:url('./img/ach4.png');" title="Нажми, чтобы увеличить"></div>
+                <div class="achievement-card zoomable" data-full="./img/ach5.jpg" style="background-image:url('./img/ach5.jpg');" title="Нажми, чтобы увеличить"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Modal for zoom images -->
+  <div id="image-modal" class="image-modal">
+    <div class="image-modal-content">
+      <img id="image-modal-img" src="" alt="preview" />
+    </div>
+  </div>
+
+</body>
+</html>
