@@ -12,9 +12,11 @@
 
 body{
   background:
-    radial-gradient(1100px 600px at 20% 10%, rgba(35,213,171,.18), transparent 60%),
-    radial-gradient(900px 600px at 90% 20%, rgba(70,120,255,.16), transparent 55%),
+    radial-gradient(100vw 60vh at 20% 10%, rgba(35,213,171,.18), transparent 60%),
+    radial-gradient(80vw 55vh at 90% 20%, rgba(70,120,255,.16), transparent 55%),
     linear-gradient(180deg,#0b1220,#0f1a2f);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: rgba(255,255,255,.92);
   font-family: "Inter Tight", sans-serif;
   font-size: 15px;
