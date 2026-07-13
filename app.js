@@ -129,6 +129,28 @@
         });
         return maxH;
       }
+document.querySelectorAll('.video-card').forEach(card => {
+      card.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const videoUrl = this.dataset.video;
+        if (!videoUrl) return;
+        const modal = document.getElementById('video-modal');
+        const player = document.getElementById('video-modal-player');
+        if (!modal || !player) return;
+        player.src = videoUrl;
+        modal.classList.add('open');
+        player.play();
+      });
+    });
+
+      const videoModal = document.getElementById('video-modal');
+      if (videoModal) {
+        videoModal.addEventListener('click', function() {
+          const player = document.getElementById('video-modal-player');
+          if (player) { player.pause(); player.src = ''; }
+          this.classList.remove('open');
+        });
+      }
 
       function setContainerMinHeight(px) {
         if (!container) return;
@@ -282,6 +304,7 @@
     if (imageModal) imageModal.addEventListener("click", closeImageModal);
 
     $$(".zoomable").forEach((el) => {
+      if (el.classList.contains('video-card')) return;
       el.addEventListener("click", () => {
         const fullSrc = el.dataset.full;
         if (fullSrc) openImageModal(fullSrc);
