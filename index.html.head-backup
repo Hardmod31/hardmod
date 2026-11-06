@@ -1,0 +1,962 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Вадим Глазко — исполнительный директор. 9 лет в финансах и банкинге. ×3 к прибыли, 50+ человек в команде. Запуск направлений с нуля и усиление действующих команд." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:title" content="Глазко Вадим — исполнительный директор" />
+  <meta property="og:description" content="9 лет в финансах и банкинге. ×3 к прибыли, 50+ человек в команде. Запуск направлений с нуля, усиление действующих команд, вывод из кризиса." />
+  <meta property="og:image" content="./img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Глазко Вадим — исполнительный директор" />
+  <meta name="twitter:description" content="9 лет в финансах и банкинге. ×3 к прибыли, 50+ человек в команде." />
+  <meta name="twitter:image" content="./img/og-image.png" />
+  <title>Vadim Glazko</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="app.js" defer></script>
+
+</head>
+
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <!-- Sidebar (burger: one button) -->
+  <aside class="side-menu" id="sideMenu" aria-label="Меню">
+    <nav class="side-menu__nav">
+      <button class="side-menu__link active" data-page="about">Обо мне</button>
+      <button class="side-menu__link" data-page="exp">Профессиональный опыт</button>
+      <button class="side-menu__link" data-page="edu">Образование</button>
+          </nav>
+  </aside>
+  <div class="menu-overlay hidden" id="menuOverlay"></div>
+
+<header id="header">
+  <div class="container header-row">
+    <button id="menuToggle" class="menu-toggle" aria-label="Меню">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="logo expletus-sans">Glazko Vadim (Chief Executive Officer)</div>
+  
+
+    <nav class="top-nav">
+      <button class="top-nav__link active" data-page="about">Обо мне</button>
+      <button class="top-nav__link" data-page="exp">Профессиональный опыт</button>
+      <button class="top-nav__link" data-page="edu">Образование</button>
+          </nav>
+
+  </div>
+</header>
+
+
+  <main id="main">
+    <h1 class="visually-hidden">Глазко Вадим Сергеевич — исполнительный директор</h1>
+    <div class="container pages">
+      <!-- PAGE 1: ABOUT -->
+      <section class="page active" id="page-about">
+        <div class="about-grid">
+          <!-- Big photo placeholder + social icons from your footer -->
+          <div class="big-photo" style="background-image:url('./img/big.png');" aria-label="Фото">
+            <div class="big-photo__social">
+            <a class="social-link telegram" href="https://t.me/hardmod" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            <a class="social-link whatsapp" href="https://wa.me/qr/PKXYGZOVG2PYG1" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a class="social-link github" href="https://github.com/Hardmod31" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a class="social-link twitter" href="https://x.com/Hardmod031" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+          </div>
+
+          <div class="about-right">
+            <!-- ABOUT card: RU only, text from your paste.txt -->
+            <div class="card about-card">
+              <div class="hero-block">
+                <div class="hero-left">
+                  <div>
+                    <div class="hero-name expletus-sans bold">
+                      <span style="font-weight: 600; font-size: 20px;">Глазко Вадим Сергеевич</span>
+                    </div>
+
+                    <div class="hero-subtitle inter-tight">
+                      32 года / Исполнительный директор (CEO)
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section-header-row">
+                <div>
+                  <div class="section-caption inter-tight"></div>
+                  <h3 class=" expletus-sans;" style="margin: 15px 0px 5px 0px; font-weight: 600; color: #33b8a8;" >
+                    Кто я?
+                  </h3>
+                </div>
+              </div>
+
+              <p class="inter-tight">
+                • Управленец с 9-летним стажем, который трижды запускал бизнес-направления с нуля, а также усиливал уже действующие команды.
+              </p>
+              <p style="margin: 10px 0px 0px 0px;" class="inter-tight">
+                • Нанимал и выводил на результат команды 50+ человек.
+              </p>
+              <p style="margin: 10px 0px 0px 0px;" class="inter-tight">
+                • Показывал рост не только на ровном рынке, но и вытаскивал целые направления из кризиса, переживал чёрных лебедей.
+              </p>
+              <h3 class="about-subtitle expletus-sans">Что меня отличает:</h3>
+              
+              <p style="margin: 10px 0px 0px 0px;" class="inter-tight">
+                • Зарабатываю для бизнеса бо́льшие деньги, успешно сохраняю накопленный капитал 
+                и эффективно приумножаю, инвестируя в новые проекты.
+              </p>
+              <p style="margin: 10px 0px 0px 0px;" class="inter-tight">
+                • Внедряю технологии: AI, CRM, SCRUM, СКУД, сайты, академии обучения, оптимизирую время на операционку.
+              </p>
+              <p style="margin: 10px 0px 0px 0px;" class="inter-tight">
+                • Постоянно развиваю команду и развиваюсь сам. Рекрутинг, онбординг, грейдинг, SMART, НЭМ и НЭД.
+              </p>
+            </div>
+
+            <!-- CONTACTS card: RU only, text from your paste.txt -->
+            <div style="padding: 12px 20px 20px 20px; max-width: 585px;" class="card contacts" id="contact">
+              <div class="section-header-row">
+                <div>
+                  <div class="section-caption inter-tight"></div>
+                  <h2 class="section-title expletus-sans" style="margin: 0;">
+                    Контакты
+                  </h2>
+                </div>
+              </div>
+
+              <p class="inter-tight">
+                <strong>Телефон:</strong>
+                <button type="button" class="contact-link" data-copy="+7 920 576-95-83">+7 920 576‑95‑83</button>
+              </p>
+              <p class="inter-tight">
+                <strong>Email:</strong>
+                <button type="button" class="contact-link" data-copy="vadimglazko31@mail.ru">vadimglazko31@mail.ru</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 2: EXPERIENCE -->
+      <section class="page" id="page-exp">
+      <div class="card career-card card--flat">
+        <div class="section-header-row">
+          <div>
+            <h2 class="section-title expletus-sans">Карьерный трек</h2>
+          </div>
+          <div class="career-total">9 лет в управлении</div>
+        </div>
+
+        <div class="career">
+        <div class="career-node exp-tab" data-exp="rgs">
+          <div class="career-years">Июль 2017 — Сентябрь 2021</div>
+          <div class="career-axis">
+            <span class="career-line career-line--none"></span>
+            <span class="career-dot"></span>
+            <span class="career-line career-line--right"></span>
+          </div>
+          <div class="career-company">«РГС» Банк</div>
+          <div class="career-role">Главный менеджер по развитию бизнеса</div>
+        </div>
+        <div class="career-node exp-tab" data-exp="expobank">
+          <div class="career-years">Сентябрь 2021 — Январь 2024</div>
+          <div class="career-axis">
+            <span class="career-line career-line--left"></span>
+            <span class="career-dot"></span>
+            <span class="career-line career-line--right"></span>
+          </div>
+          <div class="career-company">Экспобанк</div>
+          <div class="career-role">Региональный директор</div>
+        </div>
+        <div class="career-node exp-tab" data-exp="network">
+          <div class="career-years">Январь 2024 — Апрель 2025</div>
+          <div class="career-axis">
+            <span class="career-line career-line--left"></span>
+            <span class="career-dot"></span>
+            <span class="career-line career-line--right"></span>
+          </div>
+          <div class="career-company">Network Sample</div>
+          <div class="career-role">Коммерческий директор</div>
+        </div>
+        <div class="career-node exp-tab active" data-exp="property">
+          <div class="career-years">Апрель 2025 — Ноябрь 2026</div>
+          <div class="career-axis">
+            <span class="career-line career-line--left"></span>
+            <span class="career-dot"></span>
+            <span class="career-line career-line--none"></span>
+          </div>
+          <div class="career-company">Бренд Агент</div>
+          <div class="career-role">Исполнительный директор</div>
+        </div>
+        </div>
+      </div>
+
+        <!-- EXPERIENCE card: RU only, your hover tabs preserved -->
+        <div class="card card--flat" id="experience">
+          <div class="section-header-row exp-header">
+            <div>
+              <h2 class="section-title expletus-sans">
+                Профессиональный опыт
+              </h2>
+            </div>
+            <button type="button" class="tool-toggle" id="numbersOnly">Краткая выдержка</button>
+            <div class="exp-meta" id="expMeta"></div>
+          </div>
+
+
+
+<div class="experience-content">
+            <div class="experience-item inter-tight exp-panel" data-meta="Белгород" data-exp-panel="property">
+<div class="exp-blocks">
+          <article class="exp-block">
+            <span class="exp-block__num">01</span>
+            <h4 class="exp-block__title">Коммерческий блок</h4>
+            <ul class="exp-block__list">
+            <li>Диверсифицировал каналы лидогенерации с 1 (маркетинг) до 3:
+              <br>2 - подрядчик с понятной unit-экономикой (ROI 500%, окупаемость 3 мес)
+              <br>3 - внутренний ресурс (холодные звонки агентами)
+              <br>Результат: +30% валовой выручки (без учёта маркетинга)
+            </li>
+            <li>Зашёл на рынок недвижимости: Москвы и области, Мариуполя и Краснодара
+              <br>Результат: +70% валовой выручки
+            </li>
+            <li>Декомпозировал сегменты жилья между каналами лидогенерации
+              <br>Результат: вышел в сегменты бизнес-класса + премиум
+            </li>
+            </ul>
+            <p class="digits-line" data-digits>Валовая выручка: +160% (общая)</p>
+            <p class="digits-line" data-digits>Лидогенерация: +80%</p>
+            <p class="digits-line" data-digits>Каналы привлечения: 1 → 3</p>
+            <p class="digits-line" data-digits>География продаж: 2 города → 6 регионов </p>
+            <p class="digits-line" data-digits>Сегменты жилья: эконом + комфорт → все сегменты </p>
+          </article>
+          <article class="exp-block">
+            <span class="exp-block__num">02</span>
+            <h4 class="exp-block__title">Финансовый менеджмент</h4>
+            <ul class="exp-block__list">
+            <li>Порезал неэффективные косты, привязал ФОТ к KPI и переработал продукт
+              <br>Результат: -20% расходов</li>
+            <li>Выстроил систему управленческой отчётности (БДР, БДДС, ОПиУ)
+              <br>Результат: 0 кассовых разрывов
+            <li>Внедрил риск-менеджмент, систему оценки инвестпроектов и бюджетирование
+              <br>Результат: 60% гипотез окупились (ROI 230–700%)</li>
+               </li>
+            <li> Контролировал ведение бухгалтерии: ИП УСН с НДС, ООО УСН доходы
+              <br>Результат: 0 штрафов и расхождений за время работы
+              </li>
+            </ul>
+            <p class="digits-line" data-digits>Чистая прибыль: +180%</p>
+            <p class="digits-line" data-digits>Сокращение расходов: -20%</p>
+            <p class="digits-line" data-digits>Средний чек: +60% (общий)</p>
+            <p class="digits-line" data-digits>ROI гипотез: 230%-700%</p>
+            <p class="digits-line" data-digits>0 штрафов и кассовых разрывов за время работы</p>
+          </article>
+          <article class="exp-block">
+            <span class="exp-block__num">03</span>
+            <h4 class="exp-block__title">Операционное управление</h4>
+            <ul class="exp-block__list">
+            <li>Взял на себя операционное управление процессами и бэк-офисом
+              <br>Результат: собственник сфокусировался на стратегии</li>
+            <li>Внедрил SCRUM + Kanban
+              <br>Результат: прозрачная система управления, продуктивность руководителей +20%</li>
+            <li>Создал корпоративный университет (база знаний + видеоуроки + тестирование)
+              <br>Результат: высвободил 75% времени РОПа на развитие продаж</li>
+              <li>Оптимизировал офисные процессы
+                <br>Результат: внедрил СКУД и айдентику компании, актуализирована документация</li>
+            </ul>
+            <p class="digits-line" data-digits>Собственник освободился от операционки</p>
+            <p class="digits-line" data-digits>Продуктивность руководителей: +20%</p>
+            <p class="digits-line" data-digits>Время РОПа: +75% на развитие продаж</p>
+            <p class="digits-line" data-digits>Современный и безопасный офис</p>
+          </article>
+          <article class="exp-block">
+            <span class="exp-block__num">04</span>
+            <h4 class="exp-block__title">Маркетинг</h4>
+            <ul class="exp-block__list">
+            <li>Развивал 2 аккаунта 
+              <span class="inst">Instagram
+                <span class="inst-star">*
+                </span>
+                <span class="inst-tip">* Компания Meta - признана экстремистской организацией и запрещена на территории РФ
+                </span>
+              </span>, 2 TG-канала, группу ВК</li>
+            <li>Работал с блогерами, пабликами, рекламными агентствами и администрацией</li>
+            <li>Сменил подход с «закупок трафика» на контент-маркетинг и экспертный бренд</li>
+            <li>Валовая выручка от маркетинга: +60%
+              <br>Подписчики: +50%
+              <br>Охваты: +360%
+              <br>ROMI: +385%
+              <br>CPL: -40% 
+            </li>
+            </ul>
+            <p class="digits-line" data-digits>Валовая выручка с маркетинга: +60%</p>
+            <p class="digits-line" data-digits>Подписчики:
+              <span class="inst">Instagram 1<span class="inst-star">*</span>
+              <span class="inst-tip">* Компания Meta - признана экстремистской организацией и запрещена на территории РФ</span>
+            </span>: 8 000 → 23 000 |
+            <span class="inst">Instagram 2
+              <span class="inst-star">*</span>
+              <span class="inst-tip">* Компания Meta - признана экстремистской организацией и запрещена на территории РФ</span>
+            </span>: 30 000 → 34 000
+          </p>
+            <p class="digits-line" data-digits>Охваты: +360% | Вовлеченность: +90%</p>
+              <p class="digits-line" data-digits>CPL: -40% | ROMI: +385%</p>
+          </article>
+          <article class="exp-block">
+            <span class="exp-block__num">05</span>
+            <h4 class="exp-block__title">HR и команда</h4>
+            <ul class="exp-block__list">
+            <li>Увеличил штат с 31 до 52 человек:
+              <br>Коммерческий отдел: 2 РОПа, 32 агента, 3 юриста, 2 брокера, лидоруб
+              <br>Маркетинговый отдел: CMO, 2 SMM, 2 монтажёра, 2 видеооператора
+              <br>Бэк-офис: бухгалтер и главбух (аутсорс), администратор, финансист, техспец
+            </li>
+            <li>Внедрил систему грейдирования
+              <br>Результат: удержали 2 топ-агентов и 3 опытных сотрудников</li>
+            <li>Отсутствие фильтра на собеседовании → начали отказывать слабым кандидатам
+              <br>Результат: РОП вкладывает своё время только в мотивированных людей</li>
+            </ul>
+            </ul>
+            <p class="digits-line" data-digits>Команда 31 → 52 | В прямом подчинении: 10 человек</p>
+            <p class="digits-line" data-digits>Лично нанимал и адаптировал руководящий состав</p>
+            <p class="digits-line" data-digits>Через внедрение горизонтального роста удержал 5 ценных сотрудников</p>
+          </article>
+          <article class="exp-block">
+            <span class="exp-block__num">06</span>
+            <h4 class="exp-block__title">Антикриз и цифровая трансформация</h4>
+            <ul class="exp-block__list">
+            <li>Активно разбирался и внедрял свой AI без подрядчиков: 
+              <br>- AI-контроль качества звонков (конверсия по тёплой базе +20%) 
+              <br>- Claude-парсинг авито-объявлений (конверсия по холоду +70%)
+              <br>- Заменил лидоруба на Manus (скорость ответа + экономия на ФОТ)</li>
+              <li><span class="case-tag">Кейс</span>
+                <br>В первые месяцы работы в компании, столкнулся с 3 налоговыми проверками, потенциальные штрафы до 87 млн руб. 
+                В течении полутора месяцев актуализировал первичную документацию за предыдущие три с половиной года. 
+              <br>Результат: все камеральные проверки закрыты без начислений.</li>
+            </ul>
+            <p class="digits-line" data-digits>Конверсия: +20% по теплым | +70% по холодным</p>
+            <p class="digits-line" data-digits>AI-лидоруб: мгновенные ответы | в 12 раз дешевле для бизнеса</p>
+            <p class="digits-line" data-digits>Кейс, закрыл налоговую проверку на 87 млн руб → без начислений</p>
+          </article>
+</div>     
+
+                  <div class="exp-infographics">
+                    <div class="exp-infographics__title">Результат по проекту</div>
+                    <div class="info-grid">
+                    <div class="info-card info-card--chart" data-chart id="prop-revenue"
+                         data-start="0" data-target="160" data-unit="%" data-prefix="+"
+                         data-bars-start="5" data-bars-target="13"
+                         data-foot="" data-suffix=""
+                         data-label="Валовая выручка" data-period=""
+                         role="img" aria-label="Рост валовой выручки агентства на 160 процентов"></div>
+                    <div class="info-card info-card--chart" data-chart id="prop-pnl"
+                         data-start="0" data-target="180" data-unit="%" data-prefix="+"
+                         data-bars-start="0.7" data-bars-target="2"
+                         data-foot="" data-suffix=""
+                         data-label="Чистая прибыль" data-period=""
+                         role="img" aria-label="Рост прибыли P&amp;L на 180 процентов"></div>
+                    <div class="info-card stat-card stat-card--shield">
+                      <div class="stat-head">Налоговые проверки</div>
+
+                      <div class="shield-hero">
+                        <div class="shield-glyph">
+                          <i class="fas fa-shield-alt shield-icon" aria-hidden="true"></i>
+                          <span class="shield-spark" style="--sx:50%;--sy:15%">✦</span>
+                          <span class="shield-spark" style="--sx:31%;--sy:33%">✦</span>
+                          <span class="shield-spark" style="--sx:69%;--sy:33%">✦</span>
+                          <span class="shield-spark" style="--sx:25%;--sy:56%">✦</span>
+                          <span class="shield-spark" style="--sx:75%;--sy:56%">✦</span>
+                          <span class="shield-spark" style="--sx:50%;--sy:77%">✦</span>
+                        </div>
+                        <div class="shield-zero">0<span>₽</span></div>
+                      </div>
+
+                      <div class="shield-risk">
+                        <span class="shield-risk__num">87 млн ₽</span>
+                        <span class="shield-risk__cap">потенциальные штрафы</span>
+                      </div>
+
+                      <div class="shield-chips">
+                        <span class="chip"><i class="fas fa-check"></i> НДФЛ</span>
+                        <span class="chip"><i class="fas fa-check"></i> НДС</span>
+                        <span class="chip"><i class="fas fa-check"></i> РСВ</span>
+                      </div>
+                    </div>
+
+                    </div>
+                  </div>
+</div>
+
+            <div class="experience-item inter-tight exp-panel" data-meta="Удалённая работа" data-exp-panel="network">
+                        <div class="exp-blocks">
+          <article class="exp-block">
+            <span class="exp-block__num">01</span>
+            <h4 class="exp-block__title">Коммерческий блок</h4>
+            <ul class="exp-block__list">
+            <li>Полный цикл создания отдела продаж «с нуля»
+              <br>Вначале лично делал продажи, чтобы ознакомиться с продуктом
+            </li>
+            <li>Провёл SWOT-анализ, выбрал регионы, где будем осуществлять продажи
+              <br>Результат: фокус продаж на Москву, Красноярск и Санкт-Петербург</li>
+            <li>Произвёл анализ внутренних продаж
+              <br>Результат: B2B - выбран как целевой сегмент</li>
+              <li>Создал трехуровневый отдел продаж</li>
+                <br>Результат: онбординг клиента и дальнейшее его развитие
+            </ul>
+            <p class="digits-line" data-digits>Валовая выручка: 0 → 2 000 000 в мес</p>
+            <p class="digits-line" data-digits>Средний чек: 38 000 руб</p>
+            <p class="digits-line" data-digits>Кросс-продажи и апсейл: 40%</p>
+          </article>
+          <article class="exp-block">
+            <span class="exp-block__num">02</span>
+            <h4 class="exp-block__title">Операционное управление</h4>
+            <ul class="exp-block__list">
+            <li>Разработал всю внутреннюю документацию в компании
+              <br>Результат: от регламентов и скриптов до КП и договоров с клиентами</li>
+            <li>Внедрил SCRUM + Kanban
+              <br>Результат: ритуалы управления, спринты, отчётность
+            </li>
+            <li>Создал систему отслеживаемых метрик
+              <br>Результат: контроль воронки продаж по этапам
+            </li>
+            <li>Настроил системы для работы
+              <br>Результат: amoCRM, Asana, Notion, Google drive, Perplexity
+            </li>
+            </ul>
+            <p class="digits-line" data-digits>Создал всю документационную базу</p>
+            <p class="digits-line" data-digits>Двухнедельный спринт: утром - дейли | вечером - чек-аут</p>
+            <p class="digits-line" data-digits>10 этапов воронки продаж, на всех смотрел конверсия</p>
+          </article>
+          <article class="exp-block">
+            <span class="exp-block__num">03</span>
+            <h4 class="exp-block__title">Финансовый менеджмент</h4>
+            <ul class="exp-block__list">
+            <li>Создал систему KPI и грейдирования менеджеров
+              <br>Результат: фонд оплаты труда -10%
+            </li>
+            <li>Сформировал БДР, ФОТ и планировал продажи
+              <br>Результат: отдел продаж вышел на окупаемость спустя 6 месяцев
+            </li>
+            <li>Продвижение агентских схем в лизинговые компании и клиники
+              <br>Результат: сторонние партнёры приносили +10% лидогенерации
+            </li>
+            </ul>
+            <p class="digits-line" data-digits>Снизил ФОТ на 10%</p>
+            <p class="digits-line" data-digits>Окупаемость отдела продаж со старта за 6 месяцев</p>
+            <p class="digits-line" data-digits>Лидогенерация за счёт агентов: +10%</p>
+          </article>
+          <article class="exp-block">
+            <span class="exp-block__num">04</span>
+            <h4 class="exp-block__title">HR и команда</h4>
+            <ul class="exp-block__list">
+            <li>2 отдела в подчинении:
+              <br>Отдел продаж: 2 лидоруба, 5 менеджеров отдела продаж (B2B продажи и развитие клиента)
+              <br>Отдел котировок: 3 котировщика (расчёт котировок, B2C продажи и урегулирование убытков)
+            </li>
+            <li>Создал школу обучения в Notion, внедрил наставничество и парные калибровки
+              <br>Результат: высвобождение моего времени +50%
+            </li>
+            </ul>
+            <p class="digits-line" data-digits>10 человек в прямом подчинении, 2 отдела</p>
+            <p class="digits-line" data-digits>Ускорение обучения сотрудников +50%
+            <p class="digits-line" data-digits>Высвободил своё время под задачи бизнеса +50%</p>
+            </p>
+          </article>
+          <article class="exp-block">
+            <span class="exp-block__num">05</span>
+            <h4 class="exp-block__title">Работа с клиентами (B2B и B2C)</h4>
+            <ul class="exp-block__list">
+              <li>Работал с директорами производств, логистических и строительных компаний
+                <br>Результат: понимание операционной деятельности организаций
+              </li>
+            <li>Работа с 25 страховыми компаниями, продажа 15 видов B2B и 8 B2C-продуктов
+              <br>Результат: экспертиза в страховании
+            </li>
+            <li>Развивал партнёрские отношения со страховыми компаниями
+              <br>Результат: диверсификация страховых компаний, ретро-бонусы
+            </li>
+            </ul>
+            <p class="digits-line" data-digits>Разбираюсь в операционной деятельности промышленного сектора</p>
+            <p class="digits-line" data-digits>Эксперт в страховании</p>
+            <p class="digits-line" data-digits>Увеличивал мотивацию до +10%</p>
+          </article>
+          <article class="exp-block">
+            <span class="exp-block__num">06</span>
+            <h4 class="exp-block__title">Цифровая трансформация</h4>
+            <ul class="exp-block__list">
+            <li>Отвечал за IT, внедрял AI:
+              <br>Результат: сайт компании, TG-bot, AI-контроль качества звонков, AI-планёрки
+              </li>
+            <li>Работал с Яндекс.Бизнес/Директ, 2ГИС, Zoon, Flamp
+            </li>
+            <li><span class="case-tag">Кейс</span><br>Ранее в компании на 1 менеджера выделялся 1 котировщик.
+              <br>Я внедрил LLM-ассистента, который автоматически направляет запросы в страховые, собирает и анализирует результаты 
+              и готовит коммерческое предложение (финальное КП утверждает котировщик).
+              <br>Результат: автоматизированно 70% всего времени котировщика; 
+              1 котировщик обслуживает 2 менеджеров; высвобожденный ресурс перенаправлен на B2C-продажи
+            </li>
+            </ul>
+            <p class="digits-line" data-digits>Квалификация клиентов через сайт и TG-bot</p>
+            <p class="digits-line" data-digits>Конверсия: +20%</p>
+            <p class="digits-line" data-digits>Кейс с LLM, модернизация котировщиков</p>
+          </article>
+
+          </div>
+                  <div class="exp-infographics">
+                    <div class="exp-infographics__title">Результат по проекту</div>
+                    <div class="info-grid">
+                    <div class="info-card info-card--chart" data-chart id="network-revenue"
+                         data-start="0" data-target="2" data-unit="млн ₽"
+                         data-label="Валовая выручка" data-period=""
+                         role="img" aria-label="Рост выручки с 0 до 2 млн рублей в месяц"></div>
+                    <div class="info-card stat-card stat-card--uni">
+                      <div class="stat-head">Корпоративный университет</div>
+
+                      <div class="uni-hero">
+                        <i class="fas fa-user-graduate uni-icon" aria-hidden="true"></i>
+                        <div class="uni-list">
+                          <div class="uni-line">
+                            <span class="uni-line__num">−70%</span>
+                            <span class="uni-line__cap">времени руководителя,<br>затрачиваемого на обучение</span>
+                          </div>
+                          <div class="uni-line">
+                            <span class="uni-line__num">+30%</span>
+                            <span class="uni-line__cap">скорости обучения<br>сотрудников</span>
+                          </div>
+                          <div class="uni-line">
+                            <span class="uni-line__num uni-line__num--icon"><i class="fas fa-arrow-up"></i></span>
+                            <span class="uni-line__cap">качество знаний</span>
+                          </div>
+                          <div class="uni-line">
+                            <span class="uni-line__num uni-line__num--icon"><i class="fas fa-book"></i></span>
+                            <span class="uni-line__cap">собственная база данных<br>с быстрой навигацией</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="info-card stat-card stat-card--ai">
+                      <div class="stat-head">AI-внедрения</div>
+
+                      <div class="ai-orbit">
+                        <div class="ai-core">AI</div>
+
+                        <div class="ai-node" style="--x:50%;--y:calc(9% - 8px)">
+                          <i class="fas fa-headset"></i><span>Контроль качества звонков</span>
+                        </div>
+                        <div class="ai-node" style="--x:79%;--y:36%">
+                          <i class="fab fa-google-drive"></i><span>AI-поддержка Google Drive</span>
+                        </div>
+                        <div class="ai-node" style="--x:68%;--y:82%">
+                          <i class="fab fa-telegram"></i><span>AI-бот в Telegram</span>
+                        </div>
+                        <div class="ai-node" style="--x:32%;--y:82%">
+                          <i class="fas fa-globe"></i><span>AI-парсинг по сайтам</span>
+                        </div>
+                        <div class="ai-node" style="--x:21%;--y:36%">
+                          <i class="fas fa-clipboard-list"></i><span>AI-протокол планёрок</span>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+
+            <div class="experience-item inter-tight exp-panel hidden" data-meta="Удалённая работа" data-exp-panel="expobank">
+                        <div class="exp-blocks">
+          <article class="exp-block">
+            <span class="exp-block__num">01</span>
+            <h4 class="exp-block__title">Запуск направления</h4>
+            <ul class="exp-block__list">
+            <li>Запустил направление автобизнеса в трёх регионах. Результат по портфелю:
+              <br>• Белгород +40 млн/мес
+              <br>• Брянск +14 млн/мес
+              <br>• Смоленск +6 млн/мес
+            </li>
+            <li>Заходил в регионы через SWOT-анализ
+              <br>Результат: своя стратегия под каждого партнёра</li>
+            <li>Готовил еженедельные аналитические отчёты с ключевыми метриками и трендами
+              <br>Регулярная отчётность перед топ-менеджментом
+            </li>
+            </ul>
+            <p class="digits-line" data-digits>Портфель кредитования: 60 млн руб/мес</p>
+            <p class="digits-line" data-digits>Заключил партнёрство со всеми крупными игроками в регионах</p>
+            <p class="digits-line" data-digits>Отчётность топ-менеджменту Банка</p>
+          </article>
+          <article class="exp-block">
+            <span class="exp-block__num">02</span>
+            <h4 class="exp-block__title">Финансовый контроль и управление рисками</h4>
+            <ul class="exp-block__list">
+              <li>Управлял доходностью кредитного портфеля
+              <br>Результат: ROE = 21,7%</li>
+            <li>Обеспечивал банковский комплаенс, фрод-контроль, взаимодействовал с СБ и андеррайтингом
+              <br>Результат: дефолтность по портфелю = 3%
+            </li>
+            <li>Контролировал и улучшал ключевые показатели конверсии:
+              <br>AR (Approval Rate): 40%
+              <br>TR (Take Rate): 50%
+              <br>CR (Conversion Rate): 20%
+            </li>
+            </ul>
+            <p class="digits-line" data-digits>ROE: 21,7%</p>
+            <p class="digits-line" data-digits>Дефолтность: 3%</p>
+            <p class="digits-line" data-digits>Конверсия: 20%</p>
+          </article>
+          <article class="exp-block">
+            <span class="exp-block__num">03</span>
+            <h4 class="exp-block__title">Операционное управление</h4>
+            <ul class="exp-block__list">
+            <li>Внедрил методологию SCRUM
+              <br>Результат: продуктивность руководителей +50%</li>
+            <li>Запускал кредитные программы, разработал спринт-лояльность для вкладчиков
+              <br>Результат: Объём вкладов: +20%</li>
+            <li>Закупал рекламу на радио и проводил презентацию новых моделей Omoda
+              <br>Результат: объём сделок по ГК "Авто-Белогорье" +40%
+            </li>
+            </ul>
+            <p class="digits-line" data-digits>Продуктивность руководителей: +50%</p>
+            <p class="digits-line" data-digits>Объём вкладов: +20%</p>
+            <p class="digits-line" data-digits>Выдачи автокредитов в ГК Авто-Белогорье: +40%</p>
+          </article>
+          <article class="exp-block">
+            <span class="exp-block__num">04</span>
+            <h4 class="exp-block__title">HR и команда</h4>
+            <ul class="exp-block__list">
+            <li>Нанимал и онбордил от специалистов до управляющих офисом
+              <br> Результат: команда 50 человек
+            </li>
+            <li>Сформировал систему KPI, после начала СВО - заменил на бонусирование
+              <br>Результат: люди замотивированы даже в кризис</li>
+            <li>Проводил регулярные тренинги и перформанс-ревью
+              <br>Результат: партнёры отмечали квалификацию моих сотрудников
+            </li>
+            </ul>
+            <p class="digits-line" data-digits>Команда: 50 человек</p>
+            <p class="digits-line" data-digits>Замотивированный штат в приграничных регионах в начале СВО</p>
+            <p class="digits-line" data-digits>Высокая квалификация моих сотрудников часто отмечалась партнёрами</p>
+          </article>
+          <article class="exp-block">
+            <span class="exp-block__num">05</span>
+            <h4 class="exp-block__title">Инновации и новые направления</h4>
+            <ul class="exp-block__list">
+            <li>Был одним из первых среди Банков и регионов, кто начал подписывать кредит онлайн
+              <br> Результат: скорость сделки вдвое быстрее
+            </li>
+            <li>Был назначен ответственным в проект "авто по подписке"
+              <br>Результат: дополнительно привлёк 5 млн руб финансирования</li>
+            <li><span class="case-tag">Кейс</span><br>Нашёл на YouTube продукт "юридическая гарантия" и предложил внедрение. 
+              Через 2 месяца уже запустили в рамках пилота, где я участвовал.
+              <br>Результат: расторжение продукта снизилось на 15 п.п.
+            </li>
+            </ul>
+            <p class="digits-line" data-digits>Время сделки: -50%</p>
+            <p class="digits-line" data-digits>Привлёк 5 млн руб через авто по подписке</p>
+            <p class="digits-line" data-digits>Кейс, расторжение продукта: 20% → 5% </p>
+          </article>
+          <article class="exp-block">
+            <span class="exp-block__num">06</span>
+            <h4 class="exp-block__title">Партнёрства</h4>
+            <ul class="exp-block__list">
+            <li>Проводил переговоры и заключал партнёрства с владельцами бизнеса
+              <br>Результат: работа со всеми автодилерами в доверенных регионах
+            </li>
+            <li>Финансировал склады партнёра и помогал им закупать авто на внутреннем рынке
+              <br>Результат: привлёк дополнительно 200 млн руб финансирования
+            </li>
+            <li><span class="case-tag">Кейс</span><br>Один из менеджеров в автосалоне хотел открыть свою стоянку под продажу авто, но ему нужно было финансирование.
+              Рассчитал для него выход на окупаемость и будущие постоянные и переменные расходы, 
+              после чего он успешно получил деньги у инвестора на первые 30 автомобилей.
+              Результат: все клиенты первой очередью шли в мой банк без конкуренции, ~3 млн руб/мес
+            </li>
+
+            </ul>
+            <p class="digits-line" data-digits>Партнёрство со всеми автодилерами в доверенных регионах</p>
+            <p class="digits-line" data-digits>Доп. финансирование: 200 млн руб</p>
+            <p class="digits-line" data-digits>Кейс с открытием автосалона, +3 млн руб/мес</p>
+          </article>
+          </div>
+
+                  <div class="exp-infographics">
+                    <div class="exp-infographics__title">Результат по проекту</div>
+                    <div class="info-grid">
+                    <div class="info-card info-card--chart" data-chart id="expobank-portfolio"
+                         data-start="0" data-target="60" data-unit="млн ₽"
+                         data-label="Портфель кредитования" data-period=""
+                         role="img" aria-label="Рост портфеля кредитования с 0 до 60 млн рублей в месяц"></div>
+                    <div class="info-card info-card--chart" data-chart id="expobank-roe"
+                         data-start="0" data-target="21.7" data-unit="%" data-suffix=""
+                         data-label="ROE портфеля"
+                         role="img" aria-label="Рост ROE портфеля с 0 до 21,7 процента"></div>
+                    <div class="info-card stat-card stat-card--scrum">
+                      <div class="stat-head">SCRUM</div>
+
+                      <div class="scrum-hero">
+                        <div class="scrum-core">
+                          <i class="fas fa-cog" aria-hidden="true"></i>
+                          <span>SCRUM</span>
+                        </div>
+                        <div class="scrum-numbers">
+                          <div class="scrum-big" data-count="50" data-prefix="+" data-suffix="%">+0%</div>
+                          <div class="scrum-cap">продуктивность руководителей</div>
+                        </div>
+                      </div>
+
+                      <div class="scrum-rituals">
+                        <span class="ritual"><i class="fas fa-sync-alt"></i> Sprints</span>
+                        <span class="ritual"><i class="fas fa-users"></i> Daily</span>
+                        <span class="ritual"><i class="fas fa-check"></i> Checkout</span>
+                        <span class="ritual"><i class="fas fa-history"></i> Retro</span>
+                      </div>
+                    </div>
+
+
+                    </div>
+                  </div>
+                  </div>
+
+            <div class="experience-item inter-tight exp-panel hidden" data-meta="Белгород" data-exp-panel="rgs">
+              <div class="exp-blocks">
+          <article class="exp-block">
+            <span class="exp-block__num">01</span>
+            <h4 class="exp-block__title">Запуск направления</h4>
+            <ul class="exp-block__list">
+            <li>Запустил направление автобизнеса в регионе с нуля
+              <br>Результат: 0 → 92 млн руб/мес
+            </li>
+            <li>Проводил встречи и заключал партнёрства с владельцами автодилеров
+              <br>Результат: ТОП-3 в регионе, доля 16,8%</li>
+            <li>Продвигал кросс-продукты банка партнёрам
+              <br>Результат: +30% привлеченных продаж</li>
+            </ul>
+            <p class="digits-line" data-digits>Выдачи автокредитов: 0 → 92 млн руб/мес</p>
+            <p class="digits-line" data-digits>ТОП-3 в регионе | Доля 16,8%</p>
+            <p class="digits-line" data-digits>Дополнительные инвестиции: +30%</p>
+          </article>
+          <article class="exp-block">
+            <span class="exp-block__num">02</span>
+            <h4 class="exp-block__title">Точки продаж</h4>
+            <ul class="exp-block__list">
+            <li>Открыл точки продаж на территории автодилеров
+              <br>Результат: 0 → 7 POS-точек</li>
+            <li>Обеспечил продуктивность точек за счёт контроля деятельности специалистов
+              <br>Результат: ежедневная отчётность и ежемесячные собрания</li>
+            <li>Выстроил модель взаимодействия с партнёрами, где считал их P&L
+              <br>Результат: партнёры выбирали нас за прозрачность</li>
+            </ul>
+            <p class="digits-line" data-digits>POS: 7 точек</p>
+            <p class="digits-line" data-digits>Выстроенная система управления</p>
+            <p class="digits-line" data-digits>Партнёры доверили считать их P&L</p>
+          </article>
+          <article class="exp-block">
+            <span class="exp-block__num">03</span>
+            <h4 class="exp-block__title">Работа с продуктом</h4>
+            <ul class="exp-block__list">
+            <li>Создал свою матрицу продаж
+              <br>Результат: время консультации -50%
+            </li>
+            <li>Сформировал собственную тактику противостояния расторжениям клиентов
+              <br>Результат: расторжения страховых услуг упали с 30% → 7%
+            </li>
+            <li><span class="case-tag">Кейс</span><br>В ходе работы по устранению причины повысившихся расторжений страховок вышел на офис "СберКредит" 
+               (мошенническая организация, прозвонивали нашу базу клиентов). При взаимодействии с СБ и полицией → закрыли данную контору.
+            </li>
+            </ul>
+            <p class="digits-line" data-digits>Время консультации: -50%</p>
+            <p class="digits-line" data-digits>Расторжение СУ: 30% → 7%</p>
+            <p class="digits-line" data-digits>Кейс с мошенническим колл-центром</p>
+          </article>
+          <article class="exp-block">
+            <span class="exp-block__num">04</span>
+            <h4 class="exp-block__title">HR и команда</h4>
+            <ul class="exp-block__list">
+            <li>Проводил собеседования, набор и обучение сотрудников
+              <br>Результат: 20 человек в прямом подчинении</li>
+            <li><span class="case-tag">Кейс</span><br>На старте коронавируса перевел всю команду на удалённый формат работы с безопасным-подписанием. 
+              На время локдауна мы остались единственным дееспособным Банком, благодаря чему закрыли месяц с долей 60%!
+              После нормализации обстановки наша позиция среди партнёров укрепилась: +20% к продажам по отношению к результатам до локдауна.
+            </li>
+            </ul>
+            <p class="digits-line" data-digits>20 человек в прямом подчинении</p>
+            <p class="digits-line" data-digits>Кейс с коронавирусом, +20% продаж</p>
+          </article>
+          </div>
+
+<div class="exp-infographics">
+                    <div class="exp-infographics__title">Результат по проекту</div>
+                    <div class="info-grid">
+                    <div class="info-card info-card--chart" data-chart id="rgs-growth"
+                         data-start="0" data-target="92" data-unit="млн ₽"
+                         data-label="Объём автокредитования" data-period=""
+                         role="img" aria-label="Рост объёма автокредитования с 0 до 92 млн рублей"></div>
+
+                    <div class="info-card info-card--chart" data-chart id="rgs-share"
+                         data-start="0" data-target="16.8" data-unit="%" data-suffix=""
+                         data-label="Доля рынка автокредитования · ТОП-3"
+                         role="img" aria-label="Доля рынка автокредитования 16,8 процента, топ-3 в регионе"></div>
+                    <div class="info-card stat-card stat-card--team">
+                      <div class="stat-head">Команда</div>
+
+                      <div class="team-hero">
+                        <div class="team-big" data-count="20">0</div>
+                        <div class="team-cap">ЧЕЛОВЕК В ПРЯМОМ ПОДЧИНЕНИИ</div>
+                      </div>
+
+                      <div class="team-grid"><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i></div>
+
+                      <div class="team-metrics">
+                        <span class="team-metric__label">AET</span>
+                        <span class="team-num team-num--aet">3 года</span>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+</div>
+
+            
+          </div>
+        </div>
+
+        <!-- SKILLS card: скрыта (снять класс hidden, чтобы вернуть) -->
+        <div class="card hidden">
+          <div class="experience-content">
+            <div class="experience-item inter-tight exp-panel" data-skill-panel="launch">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 3: EDUCATION + HOBBIES + ACHIEVEMENTS + PHOTOS -->
+      <section class="page" id="page-edu">
+  <div class="edu-stack">
+
+    <!-- Образование -->
+    <div class="edu-row">
+      <div class="card edu-card">
+        <div class="edu-item">
+          <div class="edu-logo" style="background-image:url('./img/BelSU.gif');" aria-label="БелГУ"></div>
+          <div class="edu-text">
+            <div class="section-header-row">
+              <div>
+                <h2 class="section-title expletus-sans" style="margin:0;">
+                  НИУ «БелГУ»
+                </h2>
+              </div>
+            </div>
+            <p class="inter-tight">
+               2012 - 2016
+               <p>Экономический факультет </p> 
+              <p>Финансы, кредит и налогообложение</p>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card edu-card">
+        <div class="edu-item">
+          <div class="edu-logo" style="background-image:url('./img/Elbrus.png');" aria-label="Elbrus"></div>
+          <div class="edu-text">
+            <div class="section-header-row">
+              <div>
+                <h2 class="section-title expletus-sans" style="margin:0;">
+                  Elbrus Bootcamp
+                </h2>
+              </div>
+            </div>
+            <p class="inter-tight">
+              2024
+              <p>JavaScript Developer</p> 
+              <p>Fullstack (Frontend / Backend)</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- courses-card -->
+    <div class="card" id="courses-card">
+      <div class="section-header-row">
+        <div>
+          <h2 class="section-title expletus-sans">Курсы и повышения квалификации</h2>
+        </div>
+      </div>
+
+      <p class="inter-tight" style="font-weight: 500; margin: 0px 0px 0px 0px;">
+      </p>
+      <p>2020 - <span style="color: #33b8a8; font-weight: 600;">«SellWell» Переговоры,</span> 
+        Профессиональная риторика за столом.</p>
+      <p>2021 - <span style="color: #33b8a8; font-weight: 600;">Каспаров Вадим Гарриевич,</span> 
+        Современный подход к диетологии.</p>
+      <p>2022 - <span style="color: #33b8a8; font-weight: 600;">«Litvinoff»,</span> 
+        Криптотрейдер.</p>
+      <p>2023 - <span style="color: #33b8a8; font-weight: 600;">«Polunin Trade»,</span> 
+        Алготрейдинг.</p>
+      <p>2025 - <span style="color: #33b8a8; font-weight: 600;">«Моё дело»,</span> 
+        Выявление и формирование потребностей; Работа с конкурентами; Технологии продаж (B2B, B2C).</p>
+      <p>2026 - <span style="color: #33b8a8; font-weight: 600;">«Юрий Самолов»,</span> 
+        Директорский курс; Навыки эффективного делегирования и мотивирования.</p>
+      <p>2026 - <span style="color: #33b8a8; font-weight: 600;">«Realtutor»,</span> 
+        Руководитель офиса продаж.</p>
+    </div>
+
+
+            <!-- Hobby card -->
+            <!-- Achievements: 5 photos -->
+            <div class="card card--gallery">
+              <div class="section-header-row">
+                <div>
+                  <h2 class="section-title expletus-sans" style="margin: 0;">
+                    Дополнительная информация
+                  </h2>
+                </div>
+              </div>
+
+              <div class="achievements-grid">
+                <div class="achievement-card zoomable" data-full="./img/ach1.png" 
+                style="background-image:url('./img/ach1.png');" title="Нажми, чтобы увеличить"></div>
+                <div class="achievement-card zoomable" data-full="./img/ach2.png" 
+                style="background-image:url('./img/ach2.png');" title="Нажми, чтобы увеличить"></div>
+                <div class="achievement-card zoomable" data-full="./img/ach3.png" 
+                style="background-image:url('./img/ach3.png');" title="Нажми, чтобы увеличить"></div>
+                <div class="achievement-card zoomable" data-full="./img/ach4.jpg" 
+                style="background-image:url('./img/ach4.jpg');" title="Нажми, чтобы увеличить"></div>
+                <div class="achievement-card video-card" data-video="./img/video.mp4" 
+                title="Нажми, чтобы воспроизвести">
+                <video class="video-preview" src="./img/video.mp4" muted preload="metadata"></video>
+                <div class="video-play-btn"><i class="fas fa-play"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Modal for zoom images -->
+  <div id="image-modal" class="image-modal">
+    <div class="image-modal-content">
+      <img id="image-modal-img" src="" alt="preview" />
+    </div>
+  </div>
+  <div id="video-modal" class="image-modal">
+  <div class="video-modal-content">
+    <video id="video-modal-player" controls></video>
+  </div>
+</div>
+</body>
+</html>
